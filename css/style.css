@@ -4,24 +4,35 @@
     margin: 0;
     padding: 0;
     font-family: 'Cabin', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* border: 1px solid red; */
 }
 
 body {
-    background-color: var(--bs-light);
+    background-color: #464646;
+    color: #F6F5F4;
 }
 
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: var(--bs-dark);
-        color: var(--bs-light)
-    }
+a {
+    color: #F6F5F4;
+    text-decoration: none;
+    transition: color .5s;
+}
 
-    .card {
-        background-color: var(--bs-gray-dark);
-        color: var(--bs-text-light)
-    }
+a:hover {
+    color: #00ffff;
+    /* text-decoration: underline; */
+}
 
-    img {
-        opacity: 0.8;
-    }
+.fade-me-out.htmx-swapping {
+    opacity: 0;
+    transition: opacity .5s ease-out;
+}
+
+#fade-me-in.htmx-added {
+    opacity: 0;
+}
+
+#fade-me-in {
+    opacity: 1;
+    transition: opacity 3s ease-out;
 }
