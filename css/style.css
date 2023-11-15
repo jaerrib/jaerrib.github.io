@@ -36,3 +36,14 @@ a:hover {
     opacity: 1;
     transition: opacity 3s ease-out;
 }
+
+/* Accordion styling */
+.accordion-button {
+    background-color: red;
+}
+
+.accordion-button {
+    background-color: #00ffff;
+    color: black;
+    border: 1px solid #ffffff;
+}
