@@ -9,23 +9,19 @@
 
 body {
     background-color: #464646;
-    color: #F6F5F4;
+    /* color: #F6F5F4; */
+    color: var(--bs-light);
 }
 
 a {
-    color: #F6F5F4;
+    color: var(--bs-light);
     text-decoration: none;
     transition: color .5s;
 }
 
 a:hover {
     color: #00ffff;
-    /* text-decoration: underline; */
-}
-
-.fade-me-out.htmx-swapping {
-    opacity: 0;
-    transition: opacity .5s ease-out;
+    /* text-decoration: underline; */;
 }
 
 #fade-me-in.htmx-added {
@@ -34,16 +30,44 @@ a:hover {
 
 #fade-me-in {
     opacity: 1;
-    transition: opacity 3s ease-out;
+    transition: opacity .5s ease-out;
 }
 
 /* Accordion styling */
-.accordion-button {
-    background-color: red;
+.accordion {
+    background-color: #575757;
+    color: var(--bs-light);
+    /* cursor: pointer; */
+    padding: .75em;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.15em;
+    transition: 0.4s;
 }
 
-.accordion-button {
-    background-color: #00ffff;
-    color: black;
-    border: 1px solid #ffffff;
+.active,
+.accordion:hover {
+    background-color: #686868;
+}
+
+.accordion:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    color: var(--bs-light);
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+
+.panel {
+    padding: 0 1em;
+    display: none;
+    background-color: #464646;
+    overflow: hidden;
 }
