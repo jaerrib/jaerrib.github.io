@@ -25,3 +25,11 @@ body {
         opacity: 0.8;
     }
 }
+
+.zoom {
+    transition: transform .2s;
+}
+
+.zoom:hover {
+    transform: scale(1.025);
+}
