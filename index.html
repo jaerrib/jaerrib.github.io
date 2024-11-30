@@ -10,40 +10,38 @@
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/htmx.min.js"></script>
+    <script src="https://unpkg.com/htmlincludejs"></script>
 </head>
 
 <body>
     <div class="container">
         <div class="row mt-5">
-            <div class="col">
-                <div class="d-flex justify-content-between w-75">
-                    <a href="" hx-get="blank.html" hx-target="#info" class="fs-4 px-3 mt-3 mb-3 fade-me-in"
-                        hx-swap="innerHTML swap:.5s">Home</a>
-                    <a href="" hx-get="about.html" hx-target="#info" class="fs-4 px-3 m-3 fade-me-in"
-                        hx-swap="innerHTML swap:.5s">About</a>
-                    <a href="" hx-get="work.html" hx-target="#info" class="fs-4 px-3 m-3 fade-me-in"
-                        hx-swap="innerHTML swap:.5s">Work</a>
-                    <a href="" hx-get="contact.html" hx-target="#info" class="fs-4 px-3 m-3 fade-me-in"
-                        hx-swap="innerHTML swap:.5s">Contact</a>
-                </div>
-                <hr width="75%">
-                <div class=" mt-5 ms-3">
+            <div class="col row align-items-center">
+                <div class="ms-3">
                     <p class="fs-2">Hello</p>
                     <p class="fs-1 fw-bold" style="color: #00ffff">I'm John</p>
-                    <p class="fs-2">Software Developer</p>
+                    <p class="fs-2 text-light" style="--bs-text-opacity: .75;">Software Developer</p>
+                    <p class="fs-2 text-light" style="--bs-text-opacity: .50;">Musician</p>
+                    <p class="fs-2 text-light" style="--bs-text-opacity: .25;">Nerd</p>
                 </div>
             </div>
             <div class="col d-flex justify-content-center">
                 <img class="rounded-circle " style="width: 400px" src="img/jaerrib.jpg" alt="profile photo">
             </div>
         </div>
-        <div id="info" class="my-5 ms-3 w-75">
-            <p class="fs-5">
-                I'm a software developer with two years experience developing full-stack and standalone
-                applications with a focus on Python (Flask/Django). I am a lifelong learner and have excellent
-                problem-solving, communication, and interpersonal skills transferred from my professional experience as
-                a manager/supervisor and former small business owner.
-            </p>
+        <div class="d-flex justify-content-between folder rounded-top-4 border-bottom border-dark-subtle px-3 py-2 mt-5"
+            style="max-width: fit-content;">
+            <a href="" hx-get="home.html" hx-target="#info" class="px-3 fade-me-in folderNav"
+                hx-swap="innerHTML swap:.5s" title="Home">Home</a>
+            <a href="" hx-get="about.html" hx-target="#info" class="px-3 fade-me-in folderNav"
+                hx-swap="innerHTML swap:.5s">About</a>
+            <a href="" hx-get="work.html" hx-target="#info" class="px-3 fade-me-in folderNav"
+                hx-swap="innerHTML swap:.5s">Work</a>
+            <a href="" hx-get="contact.html" hx-target="#info" class="px-3 fade-me-in folderNav"
+                hx-swap="innerHTML swap:.5s">Contact</a>
+        </div>
+        <div id="info" class="w-90 folder p-5 rounded-bottom rounded-end">
+            <include src="./home.html"></include>
         </div>
 
 

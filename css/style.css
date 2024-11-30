@@ -21,7 +21,23 @@ a {
 
 a:hover {
     color: #00ffff;
-    /* text-decoration: underline; */;
+    /* text-decoration: underline; */
+    ;
+}
+
+.folder {
+    background-color: #f1d592;
+    /* can also try #FEF1DC */
+    color: var(--bs-dark);
+}
+
+a.folderNav {
+    font-size: 1.5em;
+    color: var(--bs-dark);
+}
+
+a.folderNav:hover {
+    font-weight: bold;
 }
 
 #fade-me-in.htmx-added {
