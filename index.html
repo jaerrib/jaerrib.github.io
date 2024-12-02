@@ -1,353 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords"
-        content="web design for small businesses, affordable website design, freelance web designer from Meadville">
-    <meta name="description"
-        content="Freelance web developer in Meadville, Pennsylania offering affordable website design for small businesses and individuals.">
-    <meta name="title" content="John Beers: Freelance Web Developer">
     <title>John Beers: Portfolio</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/htmx.min.js"></script>
+    <script src="js/htmlincludejs.js"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-dark mb-5 py-3 sticky-top" data-bs-theme="dark">
-        <div class="container container-fluid">
-            <a class="navbar-brand fw-bold" href="#">John Beers: Portfolio</a>
-            <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                <div class="navbar-nav nav-underline fs-5">
-                    <a href="#" class="nav-link">Home</a>
-                    <a href="#portfolio" class="nav-link">Portfolio</a>
-                    <a href="#skills" class="nav-link">Skills</a>
-                    <a href="#resume" class="nav-link">Resume</a>
-                    <a href="#interests" class="nav-link">Interests</a>
-                    <a href="#contact" class="nav-link fw-bold link-light">Contact Me</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <div class=" header d-flex justify-content-center mb-5 align-items-center">
-        <div class="row align-items-center">
-            <div class="text-center col-md-6 col-lg-6 my-3">
-                <img class="rounded-circle" style="width: 200px" src="img/jaerrib.jpg" alt="profile photo">
-            </div>
-            <div class="text-center col-md-6 col-lg-6">
-                <h1 class="mb-3">John Beers</h1>
-                <p class="fs-4 mb-3">Freelance Web Developer</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="text-bg-secondary my-5">
-        <p class="fs-5 col-md-6 col-sm-9 p-3 mx-auto">
-            Hi, I'm John, a <span class="fw-bold">freelance web developer</span> building web pages and full-stack
-            applications. I am a lifelong learner who loves problem-solving, music, and casual gaming. Prior to my
-            career transition, I worked as a manager / supervisor and a small business owner so <span class="fw-bold">I
-                understand your business needs</span>!
-        </p>
-    </div>
-
-    <div class="my-5">
-        <h2 class="mb-3 text-center" id="contact">Contact Me</h2>
-        <div class="container row d-flex mx-auto border-bottom">
-            <div class="col-sm-12 col-md-6 pb-sm-3">
-                <h3 class="text-center">Want to connect?</h3>
-                <p class="text-center fs-4"><a class="text-decoration-none" href="mailto:johnbeers@protonmail.com">
-                        Send me an email</a> or <a class="text-decoration-none"
-                        href="https://www.linkedin.com/in/john-beers9/" target="_blank">message me on LinkedIn</a></p>
-            </div>
-            <div class="col-sm-12 col-md-6">
-                <h3 class="text-center">Want to hire me?</h3>
-                <p class="text-center fs-4"><a class="text-decoration-none" href="https://cal.com/johnbeers/30min"
-                        target="_blank">Schedule a free 30-minute consultation</a></p>
-            </div>
-        </div>
-    </div>
-
-    <div class="container my-5 text-center pb-3 border-bottom">
-        <div id="resume" class="anchor"></div>
-        <h2 class="mb-3">Resume</h2>
-        <a class="btn btn-primary btn-lg text-decoration-none" href="assets/John.Beers.resume.pdf"
-            target="_blank">Download a PDF of my resume</a>
-    </div>
-
-    <div class="my-5 text-center">
-        <div id="portfolio" class="anchor"></div>
-        <h2 class="mb-3">Portfolio</h2>
-        <div class="container border-bottom">
-            <div class="card-group row">
-
-                <div class="col-md-6 col-lg-3 mb-3 d-flex align-items-stretch">
-                    <div class="card w-100 zoom">
-                        <img class="card-img-top" width="300" height="300" src="/img/maerstanas_django.jpg"
-                            alt="Screenshot of Maerstanas (Python)">
-                        <div class="card-body">
-                            <h3 class="card-title mb-4">Maerstanas<br><span class="fs-5">(Multiplayer game
-                                    platform)</span></h3>
-                            <p class="card-subtitle fs-5">Role:</p>
-                            <p class="card-text">Full-stack Developer</p>
-                            <p class="card-subtitle fs-5">Technologies Used:</p>
-                            <p class="card-text">Python, Django, PostgreSQL, HTML, CSS, Bootstrap, Fly.io</p>
-                        </div>
-                        <div class="footer mb-3">
-                            <a href="https://codeberg.org/jaerrib/maerstanas-webapp" target="_blank"
-                                class="btn btn-secondary btn-sm">Source Code</a>
-                            <a href="https://maerstanas.fly.dev/" target="_blank" class="btn btn-secondary btn-sm">Live
-                                Site</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3 mb-3 d-flex align-items-stretch">
-                    <div class="card w-100 zoom">
-                        <img class="card-img-top" width="300" height="300" src="/img/todo-list.jpg"
-                            alt="Screenshot of Eisenhower Matrix Prioritizer">
-                        <div class="card-body">
-                            <h3 class="card-title mb-4">Eisenhower Matrix Prioritizer</h3>
-                            <p class="card-subtitle fs-5">Role:</p>
-                            <p class="card-text">Full-stack Developer</p>
-                            <p class="card-subtitle fs-5">Technologies Used:</p>
-                            <p class="card-text">Python, Django, PostgreSQL, HTML, CSS, Bootstrap, Fly.io
-                            </p>
-                        </div>
-                        <div class="footer mb-3">
-                            <a href="https://codeberg.org/jaerrib/todo-list" target="_blank"
-                                class="btn btn-secondary btn-sm">Source Code</a>
-                            <a href="https://eisenhower-todo-list.fly.dev" target="_blank"
-                                class="btn btn-secondary btn-sm">Live Site</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3 mb-3 d-flex align-items-stretch">
-                    <div class="card w-100 zoom">
-                        <img class="card-img-top" width="300" height="300" src="/img/driving-hours.jpg"
-                            alt="Screenshot of Junior Driving Hours">
-                        <div class="card-body">
-                            <h3 class="card-title mb-4">Junior Driving Hours<br><span class="fs-5">(We-based tracking
-                                    utility)</span></h3>
-                            <p class="card-subtitle fs-5">Role:</p>
-                            <p class="card-text">Full-stack Developer</p>
-                            <p class="card-subtitle fs-5">Technologies Used:</p>
-                            <p class="card-text">Python, Django, PostgreSQL, HTML, CSS, Bootstrap, Fly.io
-                            </p>
-                        </div>
-                        <div class="footer mb-3">
-                            <a href="https://codeberg.org/jaerrib/driving-hours" target="_blank"
-                                class="btn btn-secondary btn-sm">Source Code</a>
-                            <a href="https://driving-hours.fly.dev/" target="_blank"
-                                class="btn btn-secondary btn-sm">Live Site</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3 mb-3 d-flex align-items-stretch">
-                    <div class="card w-100 zoom">
-                        <img class="card-img-top" width="300" height="300" src="/img/image2sound.jpg"
-                            alt="Screenshot of image2sound code">
-                        <div class="card-body">
-                            <h3 class="card-title mb-4">image2sound<br><span class="fs-5">(Image conversion
-                                    utility)</span></h3>
-                            <p class="card-subtitle fs-5">Role:</p>
-                            <p class="card-text">Backend Developer</p>
-                            <p class="card-subtitle fs-5">Technologies Used:</p>
-                            <p class="card-text">Python, numpy, Pillow</p>
-                        </div>
-                        <div class="footer mb-3">
-                            <a href="https://codeberg.org/jaerrib/image2sound" target="_blank"
-                                class="btn btn-secondary btn-sm">Source Code</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3 mb-3 d-flex align-items-stretch">
-                    <div class="card w-100 zoom">
-                        <img class="card-img-top" width="300" height="300" src="/img/prod-pause.jpg"
-                            alt="Screenshot of ProdPause">
-                        <div class="card-body">
-                            <h3 class="card-title mb-4">ProdPause Electronic Documentation<br><span
-                                    class="fs-5">(In-house
-                                    proof-of-concept)</span></h3>
-                            <p class="card-subtitle fs-5">Role:</p>
-                            <p class="card-text">Full-stack Developer</p>
-                            <p class="card-subtitle fs-5">Technologies Used:</p>
-                            <p class="card-text">Python, Django, PostgreSQL, HTML, CSS, Bootstrap, Fly.io
-                            </p>
-                        </div>
-                        <div class="footer mb-3">
-                            <a href="https://codeberg.org/jaerrib/prod-pause" target="_blank"
-                                class="btn btn-secondary btn-sm">Source Code</a>
-                            <a href="https://prod-pause.fly.dev/" target="_blank" class="btn btn-secondary btn-sm">Live
-                                Site</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3 mb-3 d-flex align-items-stretch">
-                    <div class="card w-100 zoom">
-                        <img class="card-img-top" width="300" height="300" src="/img/topshelfchefs.jpg"
-                            alt="Screenshot of Top Shelf Chefs Website">
-                        <div class="card-body">
-                            <h3 class="card-title mb-4">Top Shelf Chefs<br><span class="fs-5">(Informational business
-                                    site)</span></h3>
-                            <p class="card-subtitle fs-5">Role:</p>
-                            <p class="card-text">Developer / Designer</p>
-                            <p class="card-subtitle fs-5">Technologies Used:</p>
-                            <p class="card-text">Squarespace, Penpot, Inkscape</p>
-                        </div>
-                        <div class="footer mb-3">
-                            <a href="https://www.topshelfchefs.com/" _blank" class="btn btn-secondary btn-sm">Live
-                                Site</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3 mb-3 d-flex align-items-stretch">
-                    <div class="card w-100 zoom">
-                        <img class="card-img-top" width="300" height="300" src="/img/keystonepds.jpg"
-                            alt="Screenshot of Keystone Pediatric Developmental Services Website">
-                        <div class="card-body">
-                            <h3 class="card-title mb-4">Keystone Pediatric Development Services<br><span
-                                    class="fs-5">(Informational business site)</span></h3>
-                            <p class="card-subtitle fs-5">Role:</p>
-                            <p class="card-text">Developer / Designer</p>
-                            <p class="card-subtitle fs-5">Technologies Used:</p>
-                            <p class="card-text">Wix, Figma, Inkscape, User Testing</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3 mb-3 d-flex align-items-stretch">
-                    <div class="card w-100 zoom">
-                        <img class="card-img-top" width="300" height="300" src="/img/rubydawn.jpg"
-                            alt="Screenshot of RubyDawn International Website">
-                        <div class="card-body">
-                            <h3 class="card-title mb-4">RubyDawn International<br><span class="fs-5">(Ecommerce
-                                    site)</span></h3>
-                            <p class="card-subtitle fs-5">Role:</p>
-                            <p class="card-text">Developer / Designer</p>
-                            <p class="card-subtitle fs-5">Technologies Used:</p>
-                            <p class="card-text">Shopify, CSS, Figma, User Testing</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="my-5 text-center">
-        <div id="skills" class="anchor"></div>
-        <h2 class="mb-3">Skills</h2>
-        <div class="container row d-flex border-bottom mx-auto">
-            <div class="col-sm-12 col-md-6 pb-sm-3">
-                <h3>Technical Skills</h3>
-                <ul class="list-unstyled">
-                    <li>Python, Django, Flask, REST APIs</li>
-                    <li>MySQL, SQlite3, Postgres</li>
-                    <li>HTML / CSS / JavaScript</li>
-                    <li>Bootstrap, SimpleCSS</li>
-                    <li>Jinja2, htmx</li>
-                    <li>Shopify, Wix, Squarespace, Webflow, WordPress</li>
-                </ul>
-            </div>
-            <div class="col-sm-12 col-md-6">
-                <h3>Software / Tools</h3>
-                <ul class="list-unstyled">
-                    <li>Figma, Balsamiq, Penpot</li>
-                    <li>Inkscape, GIMP, Photoshop, Illustrator</li>
-                    <li>Git, GitHub, Codeberg</li>
-                    <li>MySQL Workbench, Podman/Docker</li>
-                    <li>Linux, Windows</li>
-                    <li>Fly.io, Digital Ocean, AWS, Python Anywhere</li>
-                    <li></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <div class="my-5">
-        <h2 class="mb-3 text-center" id="interests">Interests</h2>
-        <div class="container row d-flex mx-auto border-bottom">
-            <div class="col-sm-12 col-md-6 pb-sm-3">
-                <h3 class="text-center">Music</h3>
-                <p class="text-left px-5">I've been around music my whole life. I am a multi-instrumentalist, but my
-                    favorite is the guitar, which I've played since I was 14. I've been involved with various projects
-                    over the years, some as briefly as a couple of days while others have been around for decades.</p>
-            </div>
-            <div class="col-sm-12 col-md-6">
-                <h3 class="text-center">Gaming</h3>
-                <p class="text-left px-5">Although I don't always have the time to play, I enjoy a variety of video
-                    games, from open-world adventure to 4x strategy. I also like board games and have invented a few
-                    myself!</p>
-            </div>
-        </div>
-    </div>
-
     <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
-            <div class="col-md-4 d-flex align-items-center align-text-bottom">
-                <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"
-                    class="mb-3 me-2 mb-md-0 text-secondary text-opacity-75 text-decoration-none lh-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-cc-circle" viewBox="0 0 16 16">
-                        <path
-                            d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM5.408 5.89c-.83 0-1.318.64-1.318 1.753v.742c0 1.108.479 1.727 1.318 1.727.69 0 1.138-.435 1.187-1.05h1.147v.114c-.058 1.147-1.029 1.938-2.343 1.938-1.612 0-2.518-1.028-2.518-2.729v-.747c0-1.7.914-2.75 2.518-2.75 1.319 0 2.29.812 2.343 1.999v.11H6.595c-.049-.638-.506-1.108-1.187-1.108Zm5.404 0c-.831 0-1.319.64-1.319 1.753v.742c0 1.108.48 1.727 1.319 1.727.69 0 1.138-.435 1.186-1.05h1.147v.114c-.057 1.147-1.028 1.938-2.342 1.938-1.613 0-2.518-1.028-2.518-2.729v-.747c0-1.7.914-2.75 2.518-2.75 1.318 0 2.29.812 2.342 1.999v.11h-1.147c-.048-.638-.505-1.108-1.186-1.108Z" />
-                    </svg>
-                </a>
-                <span class="mb-3 mb-md-0 text-secondary text-opacity-75">2023-2024 John Beers</span>
+        <div class="row mt-5 align-items-center">
+            <div class="col ms-5">
+                <p class="fs-3">Hello</p>
+                <p class="fs-2 fw-bold" style="color: #00ffff">I'm John</p>
+                <p class="fs-3 text-light" style="--bs-text-opacity: .75;">Software Developer</p>
+                <p class="fs-3 text-light" style="--bs-text-opacity: .50;">Creative Technologist</p>
+                <p class="fs-3 text-light" style="--bs-text-opacity: .25;">Lifelong Learner</p>
             </div>
+            <div class="col d-flex justify-content-center">
+                <img class="rounded-circle" style="width: 300px; height: 300px" src="img/jaerrib.jpg"
+                    alt="profile photo">
+            </div>
+        </div>
 
-            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                <li class="ms-3"><a class="text-secondary text-opacity-75" href="https://github.com/jaerrib/"
-                        target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                            fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                            <title>Link to Github repo</title>
-                            <desc>The GitHub logo</desc>
+        <div class="d-flex row justify-content-between folder rounded-top-4 border-bottom border-dark-subtle px-3 py-2 mt-5 ms-2"
+            style="max-width: fit-content;">
+            <a href="" hx-get="about.html" hx-target="#info" class="col px-3 fade-me-in folderNav"
+                hx-swap="innerHTML swap:.5s" title="About">About</a>
+            <a href="" hx-get="skills.html" hx-target="#info" class="col px-3 fade-me-in folderNav"
+                hx-swap="innerHTML swap:.5s" title="Skills">Skills</a>
+            <a href="" hx-get="projects.html" hx-target="#info" class="col px-3 fade-me-in folderNav"
+                hx-swap="innerHTML swap:.5s" title="Projects">Projects</a>
+            <a href="assets/John.Beers.resume.pdf" class="col folderNav" title="Resume">Resume</a>
+            <a href="" hx-get="contact.html" hx-target="#info" class="col px-3 fade-me-in folderNav"
+                hx-swap="innerHTML swap:.5s" title="Contact">Contact</a>
+        </div>
+
+        <div id="info" class="w-90 folder p-5 rounded overflow-auto form-control overflow-y-scroll"
+            style="height: 36rem">
+            <include src="./about.html"></include>
+        </div>
+
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top ">
+                <div class="col-md-4 d-flex align-items-center align-text-middle">
+                    <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"
+                        class="mb-3 me-2 mb-md-1 text-opacity-75 text-decoration-none lh-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-cc-circle" viewBox="0 0 30 30">
                             <path
-                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                        </svg></a></li>
-                <li class="ms-3"><a class="text-secondary text-opacity-75" href="https://codeberg.org/jaerrib/"
-                        target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                            fill="currentColor" class="bi bi-git" viewBox="0 0 16 16">
-                            <title>Link to Codeberg repo</title>
-                            <desc>A generic git logo</desc>
+                                d="M14.972 0c4.196 0 7.769 1.465 10.715 4.393A14.426 14.426 0 0128.9 9.228C29.633 11.04 30 12.964 30 15c0 2.054-.363 3.978-1.085 5.772a13.77 13.77 0 01-3.2 4.754 15.417 15.417 0 01-4.983 3.322A14.932 14.932 0 0114.973 30c-1.982 0-3.88-.38-5.692-1.14a15.087 15.087 0 01-4.875-3.293c-1.437-1.437-2.531-3.058-3.281-4.862A14.71 14.71 0 010 15c0-1.982.38-3.888 1.138-5.719a15.062 15.062 0 013.308-4.915C7.303 1.456 10.812 0 14.972 0zm.055 2.706c-3.429 0-6.313 1.196-8.652 3.589a12.896 12.896 0 00-2.72 4.031 11.814 11.814 0 00-.95 4.675c0 1.607.316 3.156.95 4.646a12.428 12.428 0 002.72 3.992 12.362 12.362 0 003.99 2.679c1.483.616 3.037.924 4.662.924 1.607 0 3.164-.312 4.675-.937a12.954 12.954 0 004.084-2.705c2.339-2.286 3.508-5.152 3.508-8.6 0-1.66-.304-3.231-.91-4.713a11.994 11.994 0 00-2.651-3.965c-2.412-2.41-5.314-3.616-8.706-3.616zm-.188 9.803l-2.01 1.045c-.215-.445-.477-.758-.79-.937-.312-.178-.602-.268-.87-.268-1.34 0-2.01.884-2.01 2.652 0 .803.17 1.446.509 1.928.34.482.84.724 1.5.724.876 0 1.492-.43 1.85-1.286l1.847.937a4.407 4.407 0 01-1.634 1.728c-.696.42-1.464.63-2.303.63-1.34 0-2.42-.41-3.242-1.233-.821-.82-1.232-1.964-1.232-3.428 0-1.428.416-2.562 1.246-3.401.83-.84 1.879-1.26 3.147-1.26 1.858 0 3.188.723 3.992 2.17zm8.652 0l-1.983 1.045c-.214-.445-.478-.758-.79-.937-.313-.178-.613-.268-.897-.268-1.34 0-2.01.884-2.01 2.652 0 .803.17 1.446.51 1.928.338.482.838.724 1.5.724.874 0 1.49-.43 1.847-1.286l1.875.937a4.606 4.606 0 01-1.66 1.728c-.696.42-1.455.63-2.277.63-1.357 0-2.441-.41-3.253-1.233-.814-.82-1.22-1.964-1.22-3.428 0-1.428.415-2.562 1.246-3.401.83-.84 1.879-1.26 3.147-1.26 1.857 0 3.18.723 3.965 2.17z"
+                                fill="currentColor" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-person-standing" viewBox="0 0 30 30">
                             <path
-                                d="M15.698 7.287 8.712.302a1.03 1.03 0 0 0-1.457 0l-1.45 1.45 1.84 1.84a1.223 1.223 0 0 1 1.55 1.56l1.773 1.774a1.224 1.224 0 0 1 1.267 2.025 1.226 1.226 0 0 1-2.002-1.334L8.58 5.963v4.353a1.226 1.226 0 1 1-1.008-.036V5.887a1.226 1.226 0 0 1-.666-1.608L5.093 2.465l-4.79 4.79a1.03 1.03 0 0 0 0 1.457l6.986 6.986a1.03 1.03 0 0 0 1.457 0l6.953-6.953a1.031 1.031 0 0 0 0-1.457" />
-                        </svg></a></li>
-                <li class="ms-3"><a class="text-secondary text-opacity-75"
-                        href="https://www.linkedin.com/in/john-beers9/" target="_blank"><svg
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                            class="bi bi-linkedin" viewBox="0 0 16 16">
-                            <title>Link to LinkedIn</title>
-                            <desc>The LinkedIn logo</desc>
-                            <path
-                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
-                        </svg></a></li>
-                <li class="ms-3"><a class="text-secondary text-opacity-75" href="https://mastodon.social/@johnbeers"
-                        target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                            fill="currentColor" class="bi bi-mastodon" viewBox="0 0 16 16">
-                            <title>Link to Mastodon</title>
-                            <desc>The Mastodon logo</desc>
-                            <path
-                                d="M11.19 12.195c2.016-.24 3.77-1.475 3.99-2.603.348-1.778.32-4.339.32-4.339 0-3.47-2.286-4.488-2.286-4.488C12.062.238 10.083.017 8.027 0h-.05C5.92.017 3.942.238 2.79.765c0 0-2.285 1.017-2.285 4.488l-.002.662c-.004.64-.007 1.35.011 2.091.083 3.394.626 6.74 3.78 7.57 1.454.383 2.703.463 3.709.408 1.823-.1 2.847-.647 2.847-.647l-.06-1.317s-1.303.41-2.767.36c-1.45-.05-2.98-.156-3.215-1.928a3.614 3.614 0 0 1-.033-.496s1.424.346 3.228.428c1.103.05 2.137-.064 3.188-.189zm1.613-2.47H11.13v-4.08c0-.859-.364-1.295-1.091-1.295-.804 0-1.207.517-1.207 1.541v2.233H7.168V5.89c0-1.024-.403-1.541-1.207-1.541-.727 0-1.091.436-1.091 1.296v4.079H3.197V5.522c0-.859.22-1.541.66-2.046.456-.505 1.052-.764 1.793-.764.856 0 1.504.328 1.933.983L8 4.39l.417-.695c.429-.655 1.077-.983 1.934-.983.74 0 1.336.259 1.791.764.442.505.661 1.187.661 2.046v4.203z" />
-                        </svg></a></li>
-            </ul>
-        </footer>
+                                d="M14.973 0c4.213 0 7.768 1.446 10.66 4.34C28.544 7.25 30 10.803 30 15c0 4.215-1.43 7.723-4.287 10.526C22.678 28.51 19.098 30 14.973 30c-4.054 0-7.571-1.474-10.553-4.42C1.474 22.633 0 19.107 0 15S1.474 7.34 4.42 4.34C7.313 1.446 10.83 0 14.973 0zm.054 2.706c-3.41 0-6.295 1.196-8.652 3.589-2.447 2.5-3.67 5.402-3.67 8.706 0 3.321 1.214 6.196 3.642 8.624 2.429 2.429 5.322 3.642 8.679 3.642 3.339 0 6.25-1.222 8.732-3.67 2.358-2.267 3.536-5.133 3.536-8.598 0-3.41-1.197-6.311-3.589-8.705-2.392-2.392-5.285-3.588-8.678-3.588zm4.018 8.57v6.134H17.33v7.286h-4.66V17.41h-1.714v-6.134a.93.93 0 01.28-.683.933.933 0 01.684-.281h6.161c.25 0 .474.093.67.28a.912.912 0 01.294.684zM12.91 7.42c0-1.41.696-2.116 2.09-2.116s2.09.705 2.09 2.116c0 1.393-.697 2.09-2.09 2.09-1.393 0-2.09-.697-2.09-2.09z"
+                                fill="currentColor" />
+                        </svg>
+                    </a>
+                    <span class="mb-3 mb-md-0 text-opacity-75"> CC BY 4.0 John Beers</span>
+                </div>
+
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                    <li class="ms-3"><a class="text-opacity-75" href="https://github.com/jaerrib/" target="_blank"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="bi bi-github" viewBox="0 0 16 16" alt="Image link to Github repo">
+                                <path
+                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                            </svg></a></li>
+                    <li class="ms-3"><a class="text-opacity-75" href="https://codeberg.org/jaerrib/"
+                            target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                fill="currentColor" class="bi bi-git" viewBox="0 0 16 16"
+                                alt="Image link to Codeberg repo">
+                                <path
+                                    d="M15.698 7.287 8.712.302a1.03 1.03 0 0 0-1.457 0l-1.45 1.45 1.84 1.84a1.223 1.223 0 0 1 1.55 1.56l1.773 1.774a1.224 1.224 0 0 1 1.267 2.025 1.226 1.226 0 0 1-2.002-1.334L8.58 5.963v4.353a1.226 1.226 0 1 1-1.008-.036V5.887a1.226 1.226 0 0 1-.666-1.608L5.093 2.465l-4.79 4.79a1.03 1.03 0 0 0 0 1.457l6.986 6.986a1.03 1.03 0 0 0 1.457 0l6.953-6.953a1.031 1.031 0 0 0 0-1.457" />
+                            </svg></a></li>
+                    <li class="ms-3"><a class="text-opacity-75" href="https://www.linkedin.com/in/john-beers9/"
+                            target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16"
+                                alt="Image link to LinkedIn">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                            </svg></a></li>
+                    <li class="ms-3"><a class="text-opacity-75" href="https://mastodon.social/@johnbeers"
+                            target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                fill="currentColor" class="bi bi-mastodon" viewBox="0 0 16 16"
+                                alt="Image link to Mastodon">
+                                <path
+                                    d="M11.19 12.195c2.016-.24 3.77-1.475 3.99-2.603.348-1.778.32-4.339.32-4.339 0-3.47-2.286-4.488-2.286-4.488C12.062.238 10.083.017 8.027 0h-.05C5.92.017 3.942.238 2.79.765c0 0-2.285 1.017-2.285 4.488l-.002.662c-.004.64-.007 1.35.011 2.091.083 3.394.626 6.74 3.78 7.57 1.454.383 2.703.463 3.709.408 1.823-.1 2.847-.647 2.847-.647l-.06-1.317s-1.303.41-2.767.36c-1.45-.05-2.98-.156-3.215-1.928a3.614 3.614 0 0 1-.033-.496s1.424.346 3.228.428c1.103.05 2.137-.064 3.188-.189zm1.613-2.47H11.13v-4.08c0-.859-.364-1.295-1.091-1.295-.804 0-1.207.517-1.207 1.541v2.233H7.168V5.89c0-1.024-.403-1.541-1.207-1.541-.727 0-1.091.436-1.091 1.296v4.079H3.197V5.522c0-.859.22-1.541.66-2.046.456-.505 1.052-.764 1.793-.764.856 0 1.504.328 1.933.983L8 4.39l.417-.695c.429-.655 1.077-.983 1.934-.983.74 0 1.336.259 1.791.764.442.505.661 1.187.661 2.046v4.203z" />
+                            </svg></a></li>
+                </ul>
+            </footer>
+        </div>
     </div>
-
-    <script src="js/bootstrap.bundle.min.js.js"></script>
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
 
 </html>

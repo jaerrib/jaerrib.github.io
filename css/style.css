@@ -3,45 +3,60 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Cabin', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-html {
-    scroll-behavior: smooth;
+    font-family: 'Cabin', 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 }
 
 body {
-    background-color: var(--bs-light);
+    background-color: #464646;
+    /* color: #F6F5F4; */
+    color: var(--bs-light);
 }
 
+a {
+    color: var(--bs-light);
+    text-decoration: none;
+    transition: color .25s;
+}
 
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: var(--bs-dark);
-        color: var(--bs-light)
+a:hover {
+    color: var(--bs-secondary);
+}
+
+.folder {
+    background-color: #f1d592;
+    background: linear-gradient(0deg, rgba(241, 213, 146, 1) 0%, rgba(254, 241, 220, 1) 100%);
+    color: var(--bs-dark);
+}
+
+a.folderNav {
+    font-size: 1.5em;
+    color: var(--bs-dark);
+}
+
+a.folderNav:hover {
+    font-weight: bold;
+}
+
+a.folderLink {
+    text-decoration: underline;
+    color: var(--bs-dark);
+}
+
+a.folderLink:hover {
+    font-weight: bold;
+}
+
+#fade-me-in.htmx-added {
+    opacity: 0;
+}
+
+#fade-me-in {
+    opacity: 1;
+    transition: opacity .5s ease-out;
+}
+
+@media only screen and (max-width: 576px) {
+    .projectImage {
+        display: none;
     }
-
-    .card {
-        background-color: var(--bs-gray-dark);
-        color: var(--bs-text-light)
-    }
-
-    img {
-        opacity: 0.8;
-    }
-}
-
-.anchor {
-    display: block;
-    height: 100px;
-    margin-top: -100px;
-    visibility: hidden;
-}
-
-.zoom {
-    transition: transform .2s;
-}
-
-.zoom:hover {
-    transform: scale(1.025);
 }
