@@ -25,11 +25,15 @@ LINKS = (
 
 # Social widget
 SOCIAL = (
-    ("You can add links in your config file", "#"),
-    ("Another social link", "#"),
+    ("Mastodon", "https://mastodon.social/@johnbeers"),
+    ("Codeberg", "https://codeberg.org/jaerrib"),
+    ("GitHub", "https://github.com/jaerrib/"),
+    ("LinkedIn", "https://www.linkedin.com/in/john-beers9/")
 )
 
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
+
+OUTPUT = "."
