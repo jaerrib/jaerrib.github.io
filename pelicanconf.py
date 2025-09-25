@@ -1,12 +1,12 @@
-AUTHOR = 'John Beers'
-SITENAME = 'johnbeers.xyz'
+AUTHOR = "John Beers"
+SITENAME = "johnbeers.xyz"
 SITEURL = ""
 
 PATH = "content"
 
-TIMEZONE = 'America/New_York'
+TIMEZONE = "America/New_York"
 
-DEFAULT_LANG = 'en'
+DEFAULT_LANG = "en"
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
