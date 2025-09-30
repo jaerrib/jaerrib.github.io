@@ -28,7 +28,7 @@ SOCIAL = (
     ("Mastodon", "https://mastodon.social/@johnbeers"),
     ("Codeberg", "https://codeberg.org/jaerrib"),
     ("GitHub", "https://github.com/jaerrib/"),
-    ("LinkedIn", "https://www.linkedin.com/in/john-beers9/")
+    ("LinkedIn", "https://www.linkedin.com/in/john-beers9/"),
 )
 
 DEFAULT_PAGINATION = 10
@@ -37,3 +37,5 @@ DEFAULT_PAGINATION = 10
 # RELATIVE_URLS = True
 
 OUTPUT_PATH = "../"
+
+THEME = "piccolo-1.3"
