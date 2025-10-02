@@ -2,12 +2,17 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8"/>
+      <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="generator" content="Pelican"/>
-    <title>johnbeers.xyz</title>
+    <title>johnbeers.xyz - Hello World</title>
     <link rel="stylesheet" type="text/css"
           href="/theme/css/pico.min.css"/>
+
+
+
+
+
     <style>
         article img {
             display: block;
@@ -61,12 +66,12 @@
 <header class="container">
     <nav>
         <ul>
-            <li><a href=""><strong>All Posts</strong></a></li>
+            <li><a href="">All Posts</a></li>
         </ul>
         <ul>
 
-            <li><a
-                    href="/category/blog.html">Blog</a>            </li>
+            <li><strong><a
+                    href="/category/blog.html">Blog</a></strong>            </li>
 
 &nbsp;&nbsp;|&nbsp;&nbsp;            <li><a
                     href="/pages/about.html">About</a>            </li>
@@ -88,32 +93,41 @@
                  style="border-radius: 50%;">
         </div>
     </section>
-  <article>
-    <header>
-      <hgroup>
-        <h2>
-          <a href="/hello-world.html" rel="bookmark"
-             title="Permalink to Hello World">Hello World</a></h2>
-             <h3>By
-              <a href="/author/john-beers.html">John Beers</a>               on <time class="published" datetime="2025-10-02T00:00:00-04:00">Thu 02 October 2025</time>.</h3>
-        </hgroup>
-              <aside style="grid-column: 2; display: flex; align-items: end; margin-bottom: 30px;">
-               <div style="color: #73828c">Category: <a href="/category/blog.html">Blog</a>            </div>
-              </aside>
+<article>
+  <header>
+    <hgroup>
+    <h2>
+      <a href="/hello-world.html" rel="bookmark"
+         title="Permalink to Hello World">Hello World</a></h2>
+         <h3>By
+          <a href="/author/john-beers.html">John Beers</a>           on <time class="published" datetime="2025-10-02T00:00:00-04:00">Thu 02 October 2025</time>.</h3>
+    </hgroup>
+          <aside style="grid-column: 2; display: flex; align-items: end; margin-bottom: 30px;">
+           <div style="color: #73828c">Category: <a href="/category/blog.html">Blog</a>        </div>
+          </aside>
+ 
   </header>
-    <p>An introductory post for a reimagined website</p> <a href="/hello-world.html">Keep Reading</a>
-    <!-- <footer>
-      <time class="published" datetime="2025-10-02T00:00:00-04:00"> Thu 02 October 2025 </time>
-      <address>By
-        <a href="/author/john-beers.html">John Beers</a>
-      </address>
-    </footer>
-     -->
+
+  <p>Today marks the debut of my reimagined website built using the Python-powered
+static site generator, <a href="https://getpelican.com/">Pelican</a>!</p>
+<p><em>Why use Pelican?</em></p>
+<p>Quite simply, I enjoy working with Python. When I was looking for an SSG to redo
+my site, Pelican fit the bill. As an added bonus, it works very well with
+Markdown.</p>
+<p><em>Why redo your site now?</em></p>
+<p>A few reasons really. I've been looking at SSGs in general, and my portfolio
+page needed some help. The last iteration of the site was built trying to
+incorporate htmx in order to be clever. It had a manilla folder kind of design
+with tabs that swapped out the content displayed on the folder. Unless someone
+looked at the source code, no one knew I had used htmx, so the effect was
+somewhat wasted and didn't really look all the good anyway.</p>
+<p>Another reason is that I wanted to start using a blog to post about things I've
+been learning, whether it's programming or a foreign language, and I didn't
+necessarily want to build a full-stack app to do it. I also didn't want to use
+something like WordPress. Pelican made it easy to get things rolling and deploy
+to Codeberg Pages.</p>
+
   </article>
-  
-
-
-
 </main>
 <footer style="display: grid; grid-template-columns: repeat(auto-fit, [col-start] minmax(100px, 1fr) [col-end]); padding-top: 0;"
         class="container">
