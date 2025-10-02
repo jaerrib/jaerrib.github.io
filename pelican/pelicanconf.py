@@ -20,7 +20,6 @@ LINKS = (
     ("Pelican", "https://getpelican.com/"),
     ("Python.org", "https://www.python.org/"),
     ("Jinja2", "https://palletsprojects.com/p/jinja/"),
-    ("You can modify those links in your config file", "#"),
 )
 
 # Social widget
@@ -38,4 +37,6 @@ DEFAULT_PAGINATION = 10
 
 OUTPUT_PATH = "../"
 
-THEME = "piccolo-1.3"
+THEME = "../pelican/theme/custom"
+
+GRAVATAR_HASH = "dc88c852458e2bbb8cdd62be0cf9e26c50014cb3a593afcb04848d23801c10d6"
