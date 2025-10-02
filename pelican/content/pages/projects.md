@@ -1,6 +1,6 @@
 Title: Projects
 
-Here's a list of Some of the software and design projects I've worked on,
+Here's a list of some of the software and design projects I've worked on,
 including personal, freelance, and volunteer work:
 
 ---
