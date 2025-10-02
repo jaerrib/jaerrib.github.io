@@ -1,6 +1,6 @@
 AUTHOR = "John Beers"
 SITENAME = "johnbeers.xyz"
-SITEURL = ""
+SITEURL = "https://johnbeers.xyz"
 
 PATH = "content"
 
