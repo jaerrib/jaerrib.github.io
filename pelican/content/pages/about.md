@@ -1,6 +1,6 @@
 Title: About
 
-## About Me
+### About Me
 
 I am a Full-Stack Web Developer (Python/Django) currently working as a Systems
 Support Specialist. I learned to program when I was 11 using BASIC on my Tandy
@@ -19,12 +19,13 @@ others have been around for decades.
 
 Although I don't always have the time to play, I enjoy a variety of video
 games, from open-world adventure to 4x strategy. I also like board games and
-have invented a few myself. Read more about those
+have invented a few
+myself. [Read more about those]({filename}saxon_games.md)
 or [check out the  platformer game I made with Godot](https://jaerrib.itch.io/wightwatch-keep)!</p>
 
 ---
 
-## Skills
+### Skills
 
 - **Languages:** Python, JavaScript, HTML, CSS, SQL, GDScript, Markdown
 - **Frameworks/Libraries:** Django, Wagtail, Flask, Bootstrap, Simple.css, htmx,
@@ -39,13 +40,13 @@ or [check out the  platformer game I made with Godot](https://jaerrib.itch.io/wi
 
 ---
 
-## Want to connect?
+### Want to connect?
 
 [Send me an email](johnbeers@protonmail.com)
 or [message me on LinkedIn](https://www.linkedin.com/in/john-beers9/). I'm also
 on [Mastodon](https://mastodon.social/@johnbeers).
 
-## Want to hire me?
+### Want to hire me?
 
 [Schedule a free 30-minute consultation](https://cal.com/johnbeers/30min)
 
