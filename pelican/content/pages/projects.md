@@ -5,11 +5,22 @@ including personal, freelance, and volunteer work:
 
 ---
 
+### Space Snake Survivor *(Work in progress)*
+
+- A pixel
+  art [Survivors-like](https://en.wikipedia.org/wiki/Vampire_Survivors%E2%80%93like)
+  Snake game where every playthrough contains a random selection of sectors.
+- **Role**: Developer
+- **Technologies Used:** Godot Engine, GDScript, Pixelorama
+- [Source Code](https://codeberg.org/jaerrib/space-snake-survivor)
+
+---
+
 ### [Wightwatch Keep](https://jaerrib.codeberg.page/wightwatch_keep/)
 
 - 2D platformer game for Linux and web
 - **Role:** Developer
-- **Technologies Used:** Godot Engine, GDScript
+- **Technologies Used:** Godot Engine, GDScript, Pixelorama
 - [Source Code](https://codeberg.org/jaerrib/wightwatch_keep/) | [Play / Purchase on Itch.io](https://jaerrib.itch.io/wightwatch-keep)
 
 ---
