@@ -1,7 +1,7 @@
 Title: Hello World
 Category: Blog
 Date: 2025-10-02
-Authors: John Beers
+Author: John Beers
 Summary: An introductory post for a reimagined website
 
 Today marks the debut of my reimagined website built using the Python-powered
