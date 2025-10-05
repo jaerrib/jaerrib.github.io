@@ -79,7 +79,8 @@ strategy over luck.
 ### Cyngesheall
 
 > The word cyngesheall is an Anglo-Saxon (Old English) word meaning "king's
-> corner".
+> hall". (
+> Sources - [1](https://bosworthtoller.com/7144) [2](https://bosworthtoller.com/18427))
 
 Cyngesheall is my newest game, being conceived in late 2024. It, too, uses a 7x7
 grid. However, instead of "checkers with hit points" or making connections with
