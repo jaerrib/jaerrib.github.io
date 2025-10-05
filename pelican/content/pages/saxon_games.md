@@ -78,7 +78,7 @@ strategy over luck.
 
 ### Cyngesheall
 
-> The word cyngesheall is an Anglo-Saxon (Old English) word meaning "king's
+> The word *cyngesheall* is an Anglo-Saxon (Old English) word meaning "king's
 > hall". (
 > Sources - [1](https://bosworthtoller.com/7144) [2](https://bosworthtoller.com/18427))
 
