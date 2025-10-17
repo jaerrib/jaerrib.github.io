@@ -28,8 +28,8 @@ being [copyleft](https://en.wikipedia.org/wiki/Copyleft).
 
 #### Game Rules
 
-- ["Living rules"](https://jaerrib.codeberg.page/maerstanas/)
-- [Print-and-Play game](https://johnbeers.xyz/saxon-games/codeberg.org/jaerrib/maerstanas)
+- ["Living rules"](https://jaerrib.codeberg.page/maerstanas)
+- [Print-and-Play game](https://jaerrib.codeberg.page/maerstanas)
 
 #### Play Online
 
@@ -80,7 +80,8 @@ strategy over luck.
 
 > The word *cyngesheall* is an Anglo-Saxon (Old English) word meaning "king's
 > hall". (
-> Sources - [1](https://bosworthtoller.com/7144) [2](https://bosworthtoller.com/18427))
+>
+Sources - [1](https://bosworthtoller.com/7144) [2](https://bosworthtoller.com/18427))
 
 Cyngesheall is my newest game, being conceived in late 2024. It, too, uses a 7x7
 grid. However, instead of "checkers with hit points" or making connections with
@@ -93,4 +94,5 @@ Mǽrstánas but uses them in a completely different manner.
 #### Game Rules
 
 - ["Living rules"](https://codeberg.org/jaerrib/cyngesheall)
-- Print-and-play game *Coming soon!*
+- [Print-and-Play game](https://codeberg.org/jaerrib/cyngesheall)
+
