@@ -8,7 +8,7 @@
     <meta name="generator" content="Pelican"/>
     <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
     <link rel="stylesheet" type="text/css"
-          href="{{ SITEURL }}/theme/css/pico.min.css"/>
+          href="{{ SITEURL }}/theme/css/pico.jade.min.css"/>
     {% if FEED_ALL_ATOM %}
     <link
             href="{{ FEED_DOMAIN }}/{% if FEED_ALL_ATOM_URL %}{{ FEED_ALL_ATOM_URL }}{% else %}{{ FEED_ALL_ATOM }}{% endif %}"
@@ -223,7 +223,7 @@
         <p style="padding-top: 0.5em;">
             Built with the <a
                 href="https://github.com/iamjameswalters/piccolo">Piccolo</a>
-            theme and modified to use <a
+            theme and modified to use the jade variant of <a
                 href="https://picocss.com/">Pico.css</a> version 2.1.1.</p>
     </div>
 </footer>
