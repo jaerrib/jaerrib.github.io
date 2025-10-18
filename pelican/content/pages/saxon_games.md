@@ -29,7 +29,7 @@ being [copyleft](https://en.wikipedia.org/wiki/Copyleft).
 #### Game Rules
 
 - ["Living rules"](https://jaerrib.codeberg.page/maerstanas)
-- [Print-and-Play game](https://jaerrib.codeberg.page/maerstanas)
+- [Print-and-Play game](https://codeberg.org/jaerrib/maerstanas)
 
 #### Play Online
 
