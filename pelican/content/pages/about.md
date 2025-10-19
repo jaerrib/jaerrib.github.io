@@ -42,7 +42,7 @@ or [check out the  platformer game I made with Godot](https://jaerrib.itch.io/wi
 
 ### Want to connect?
 
-[Send me an email](johnbeers@protonmail.com)
+[Send me an email](mailto:johnbeers@protonmail.com)
 or [message me on LinkedIn](https://www.linkedin.com/in/john-beers9/). I'm also
 on [Mastodon](https://mastodon.social/@johnbeers).
 
