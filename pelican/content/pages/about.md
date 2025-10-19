@@ -4,7 +4,7 @@ Title: About
 
 I am a Full-Stack Web Developer (Python/Django) currently working as a Systems
 Support Specialist. I learned to program when I was 11 using BASIC on my Tandy
-Color Computer 2. I eventually started building web sites for bands back in the
+Color Computer 2. I eventually started building websites for bands back in the
 late 90s when it was far less common for musicians to have a presence on the
 Internet.
 
@@ -21,7 +21,7 @@ Although I don't always have the time to play, I enjoy a variety of video
 games, from open-world adventure to 4x strategy. I also like board games and
 have invented a few
 myself. [Read more about those]({filename}saxon_games.md)
-or [check out the  platformer game I made with Godot](https://jaerrib.itch.io/wightwatch-keep)!</p>
+or [check out the platformer game I made with Godot](https://jaerrib.itch.io/wightwatch-keep)!</p>
 
 ---
 

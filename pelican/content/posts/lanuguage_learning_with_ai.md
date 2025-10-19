@@ -60,4 +60,4 @@ than being in a classroom. For me, at least, it's been very useful.
 In short, AI isn't going to solve the world's problems, and it isn't going to
 replace all the programmers. It's just a tool like all the others that humans
 have invented, and as such, can find its place alongside those tools. Just
-remember to interface with actual humans now and again. That's important, too,
+remember to interface with actual humans now and again. That's important, too.
