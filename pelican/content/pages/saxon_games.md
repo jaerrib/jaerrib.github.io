@@ -86,9 +86,10 @@ Cyngesheall is my newest game, being conceived in late 2024. It, too, uses a 7x7
 grid. However, instead of "checkers with hit points" or making connections with
 stones, Cyngesheall take more direct inspiration from Hnefatafl. Aside from the
 setup, the primary differentiation is that the number of player pieces is even
-instead of asymmetrical, and each player has a king, which must reach the
-opposite corner rather than an edge. It currently features the same stones as
-Mǽrstánas but uses them in a completely different manner.
+instead of asymmetrical, and both players have a king, which must reach the
+opposite corner rather than an edge. In addition, both players have a
+"commander" which moves similarly to a queen in chess. It currently features the
+same stones as Mǽrstánas but uses them in a completely different manner.
 
 #### Game Rules
 
