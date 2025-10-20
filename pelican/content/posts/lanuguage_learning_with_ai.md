@@ -2,6 +2,7 @@ Title: Language Learning with AI
 Category: Blog
 Tags: language, learning, AI
 Date: 2025-10-19
+Modified: 2025-10-20
 Author: John Beers
 Summary: How I'm using an LLM to improve my written German
 
@@ -18,13 +19,13 @@ and tried watching shows on Netflix with the native audio. Considering the slow
 pacing, I'm proud to say my reading level is around B1. On the other hand, my
 speaking and writing are not as solid.
 
-At the beginning of October, I decided that I would begin to do two things. One
-was a shift in how I was consuming media. Hearing the German dialogue was good,
-but leaving the subtitles in English wasn't forcing me to think. Therefore, I
-started watching whatever I could with both the audio and subtitles in German. I
-also started changing the language in the video games I was playing. This has
-been helpful with immersion, but the second thing I did has been the most
-helpful.
+At the beginning of September, I decided that I would begin to do two things.
+One was a shift in how I was consuming media. Hearing the German dialogue was
+good, but leaving the subtitles in English wasn't forcing me to think.
+Therefore, I started watching whatever I could with both the audio and subtitles
+in German. I also started changing the language in the video games I was
+playing. This has been helpful with immersion, but the second thing I did has
+been the most helpful.
 
 I started keeping a daily journal (*ein Tagebuch*) completely in German. My goal
 was to write 3-5 sentences about everyday events: what I ate, what I did at
@@ -45,7 +46,7 @@ My workflow has been this:
 3. Copilot then provides specific feedback on things like verb placement or
    tense as well as suggesting more native, idiomatic phrasing. Sometimes, the
    meaning changes somewhat, and I have to tell it what I was really trying to
-   say. Anyone who has experimental with tools like this knows how that works
+   say. Anyone who has experimented with tools like this knows how that works
    though.
 4. Once I have a good revision, I copy both entries into a Nextcloud note so
    that I can review the differences later.
