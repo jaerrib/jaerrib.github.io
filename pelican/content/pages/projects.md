@@ -31,7 +31,7 @@ including personal, freelance, and volunteer work:
   the ["Jumpstart to 2D Game Development: Godot 4.3+ for Beginners"](https://www.udemy.com/course/jumpstart-to-2d-game-development-godot-4-for-beginners/)
   tutorial on Udemy
 - **Role:** Developer
-    - **Technologies Used:** Godot Engine, GDScript, Pixelorama
+- **Technologies Used:** Godot Engine, GDScript
 - [Source Code](https://codeberg.org/jaerrib/photon-frenzy)
 
 ---
