@@ -9,7 +9,7 @@ including personal, freelance, and volunteer work:
 
 - A pixel
   art [Survivors-like](https://en.wikipedia.org/wiki/Vampire_Survivors%E2%80%93like)
-  Snake game where every playthrough contains a random selection of sectors.
+  Snake game where every playthrough contains a random selection of sectors
 - **Role**: Developer
 - **Technologies Used:** Godot Engine, GDScript, Pixelorama
 - [Source Code](https://codeberg.org/jaerrib/space-snake-survivor)
@@ -22,6 +22,17 @@ including personal, freelance, and volunteer work:
 - **Role:** Developer
 - **Technologies Used:** Godot Engine, GDScript, Pixelorama
 - [Source Code](https://codeberg.org/jaerrib/wightwatch_keep/) | [Play / Purchase on Itch.io](https://jaerrib.itch.io/wightwatch-keep)
+
+---
+
+### Photon Frenzy *(Work in progress)*
+
+- An expanded version of the "Space Ace" game in
+  the ["Jumpstart to 2D Game Development: Godot 4.3+ for Beginners"](https://www.udemy.com/course/jumpstart-to-2d-game-development-godot-4-for-beginners/)
+  tutorial on Udemy
+- **Role:** Developer
+    - **Technologies Used:** Godot Engine, GDScript, Pixelorama
+- [Source Code](https://codeberg.org/jaerrib/photon-frenzy)
 
 ---
 
