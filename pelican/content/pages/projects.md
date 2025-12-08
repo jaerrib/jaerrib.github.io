@@ -16,23 +16,24 @@ including personal, freelance, and volunteer work:
 
 ---
 
-### [Wightwatch Keep](https://jaerrib.codeberg.page/wightwatch_keep/)
+### Wightwatch Keep
 
-- 2D platformer game for Linux and web
+- 2D platformer game for Linux, Windows, and web
 - **Role:** Developer
 - **Technologies Used:** Godot Engine, GDScript, Pixelorama
 - [Source Code](https://codeberg.org/jaerrib/wightwatch_keep/) | [Play / Purchase on Itch.io](https://jaerrib.itch.io/wightwatch-keep)
 
 ---
 
-### Photon Frenzy *(Work in progress)*
+### Photon Frenzy
 
-- An expanded version of the "Space Ace" game in
+- 2D retro-style arcade shooter game for Linux, Windows, and web
+- This is an expanded version of the "Space Ace" game in
   the ["Jumpstart to 2D Game Development: Godot 4.3+ for Beginners"](https://www.udemy.com/course/jumpstart-to-2d-game-development-godot-4-for-beginners/)
   tutorial on Udemy
 - **Role:** Developer
 - **Technologies Used:** Godot Engine, GDScript
-- [Source Code](https://codeberg.org/jaerrib/photon-frenzy)
+- [Source Code](https://codeberg.org/jaerrib/photon-frenzy) | [Play / Purchase on Itch.io](https://jaerrib.itch.io/photon-frenzy)
 
 ---
 
