@@ -28,7 +28,7 @@ including personal, freelance, and volunteer work:
 ### Photon Frenzy
 
 - 2D retro-style arcade shooter game for Linux, Windows, and web
-- This is an expanded version of the "Space Ace" game in
+- Expanded from the "Space Ace" game in
   the ["Jumpstart to 2D Game Development: Godot 4.3+ for Beginners"](https://www.udemy.com/course/jumpstart-to-2d-game-development-godot-4-for-beginners/)
   tutorial on Udemy
 - **Role:** Developer
