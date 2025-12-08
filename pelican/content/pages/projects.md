@@ -37,6 +37,17 @@ including personal, freelance, and volunteer work:
 
 ---
 
+### C&J Industries Intranet Site
+
+- Intranet site for my employer with custom models and templates for internal
+  use
+- **Role:** Full-stack Developer
+- **Technologies Used:** Wagtail, Wagtail CRX, PostgreSQL, Nginx, Podman, Ubuntu
+  Server
+- [Source Code](https://codeberg.org/jaerrib/intranet)
+
+---
+
 ### Mǽrstánas
 
 - Multiplayer platform for playing the board game, Mǽrstánas
