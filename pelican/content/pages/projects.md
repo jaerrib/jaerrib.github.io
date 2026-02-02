@@ -11,8 +11,17 @@ including personal, freelance, and volunteer work:
   art [Survivors-like](https://en.wikipedia.org/wiki/Vampire_Survivors%E2%80%93like)
   Snake game where every playthrough contains a random selection of sectors
 - **Role**: Developer
-- **Technologies Used:** Godot Engine, GDScript, Pixelorama
+- **Technologies Used:** Godot Engine 4.x, GDScript, Pixelorama
 - [Source Code](https://codeberg.org/jaerrib/space-snake-survivor)
+
+---
+
+### RNGremlin
+
+- A dice rolling application for solo TTRPG use featuring multiple pixel art themes and workspace that auto saves/loads 
+- **Role**: Developer
+- **Technologies Used:** Godot Engine 3.x, GDScript, Pixelorama
+- [Source Code](https://codeberg.org/jaerrib/RNGremlin)
 
 ---
 
@@ -20,7 +29,7 @@ including personal, freelance, and volunteer work:
 
 - 2D platformer game for Linux, Windows, and web
 - **Role:** Developer
-- **Technologies Used:** Godot Engine, GDScript, Pixelorama
+- **Technologies Used:** Godot Engine 4.x, GDScript, Pixelorama
 - [Source Code](https://codeberg.org/jaerrib/wightwatch_keep/) | [Play / Purchase on Itch.io](https://jaerrib.itch.io/wightwatch-keep)
 
 ---
@@ -32,7 +41,7 @@ including personal, freelance, and volunteer work:
   the ["Jumpstart to 2D Game Development: Godot 4.3+ for Beginners"](https://www.udemy.com/course/jumpstart-to-2d-game-development-godot-4-for-beginners/)
   tutorial on Udemy
 - **Role:** Developer
-- **Technologies Used:** Godot Engine, GDScript
+- **Technologies Used:** Godot Engine 4.x, GDScript
 - [Source Code](https://codeberg.org/jaerrib/photon-frenzy) | [Play / Purchase on Itch.io](https://jaerrib.itch.io/photon-frenzy)
 
 ---
