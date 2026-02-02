@@ -5,14 +5,13 @@
       <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="generator" content="Pelican"/>
-    <title>johnbeers.xyz - Making Games</title>
+    <title>johnbeers.xyz - Making an App</title>
     <link rel="stylesheet" type="text/css"
           href="/theme/css/pico.jade.min.css"/>
 
 
 
 
-    <meta name="tags" content="games" />
     <meta name="tags" content="coding" />
 
     <style>
@@ -99,26 +98,36 @@
   <header>
     <hgroup>
     <h2>
-      <a href="/making-games.html" rel="bookmark"
-         title="Permalink to Making Games">Making Games</a></h2>
+      <a href="/making-an-app.html" rel="bookmark"
+         title="Permalink to Making an App">Making an App</a></h2>
          <h3>By
-          <a href="/author/john-beers.html">John Beers</a>           on <time class="published" datetime="2025-12-14T00:00:00-05:00">Sun 14 December 2025</time>.<br />Edited <time datetime="2026-02-02T00:00:00-05:00">Mon 02 February 2026</time></h3>
+          <a href="/author/john-beers.html">John Beers</a>           on <time class="published" datetime="2026-02-02T00:00:00-05:00">Mon 02 February 2026</time>.</h3>
     </hgroup>
           <aside style="grid-column: 2; display: flex; align-items: end; margin-bottom: 30px;">
            <div style="color: #73828c">Category: <a href="/category/blog.html">Blog</a>          <br />Tags: 
-            <a href="/tag/games.html">games</a>,             <a href="/tag/coding.html">coding</a>        </div>
+            <a href="/tag/coding.html">coding</a>        </div>
           </aside>
  
   </header>
 
-  <p>The first computer I ever got to use was a <strong>Texas Instruments TI-99</strong>. It was around 1984, which puts me somewhere close to 8 years old. My elementary school had that one computer for the entire building. I got to do some stuff with turtle graphics but not much else. Even though my exposure was limited, it planted a seed of what was possible.</p>
-<p>I'm a creative person. I hacked together games with balloons and string stretched across the room to play "volleyball" with my sisters. I made up my own board games, sometimes with no pieces and just kept everything was in my head. Art and music were always in the picture, too. A lot of that came together for the first time when I was 11.</p>
-<p>Christmas 1987 was the year I received a glorious gift: the <strong>Tandy Color Computer 2</strong>. I played the games my parents bought me, of course. I loved <em>Dungeons of Daggorath</em> and would spend hours making up fictional teams and leagues for <em>Color Baseball</em>, tracking all the stats and records. Where things gelled though was getting that initial taste of coding.</p>
-<p>Between the included documentation and the source code I saw in issues of <em>3-2-1 Contact</em> magazine, I taught myself BASIC. I made things like a "diary" program, which saved text data to a cassette tape, and I made my first games. I don't profess to be Lord British. I wasn't making <em>Akalabeth</em>, but even the simplest text-based games brought me joy. There was just something about that loop of writing the code and then being able to move those colored stick figures across the screen with a joystick.</p>
-<p>I took all the coding classes that were offered at school, from BASIC in 8th grade to two years of Pascal in high school. For some reason, I had the asinine idea that doing something you enjoy for a job would take the fun out of it. I wasn't entirely wrong but rather than pursuing a computer science path, I opted to do...nothing and instead worked at jobs I didn't like for the majority of my life. That's a story for a different post though.</p>
-<p>Despite not doing anything technical for gainful employment, I still did some things on the side, mostly HTML/CSS and Python. In the past couple years, I started to hear about this game engine called <strong>Godot</strong>, especially with different game engines changing licenses and fees. I love Linux and open-source so this was right up my alley.</p>
-<p>I finally got around to learning Godot about 12 months ago. <strong>THIS</strong> was what I've been missing in my life. Game engines weren't a thing when I was a kid and animating stick figures was all I could muster at the time. I started out building several small games from a Udemy course (<a href="https://jaerrib.itch.io/photon-frenzy">one of which</a> I expanded and released), but I've also created an original game called <em>Wightwatch Keep</em>. It's <a href="https://codeberg.org/jaerrib/wightwatch_keep">open-source</a> but also available on <a href="https://jaerrib.itch.io/wightwatch-keep">Itch.io</a>.</p>
-<p>Realistically speaking, I'm almost 50 and have no delusions of breaking into game dev at this point in my life. Sure, I could make an indie hit, but it's probably not going to happen. What can happen, however, is finding the joy in building something, getting to play in a world of my creation, and sharing it with others. I've tapped into that fountain of youth where problem-solving is play and the fruit of those efforts is moving pixels across the screen with a gamepad.</p>
+  <p>In the last year, I've made a variety of games with Godot. They've ranged from things I built by following a tutorial to full-fledged inventions of my own. My ambition, however, is still greater. I have grand ideas for things that I'm not even sure I can build (yet), and to be honest, sometimes it impacts my motivation. So, I got the idea to build something else. Something different, smaller in scope, and most importantly, fun.</p>
+<p>While Godot is a game engine, there are multiple examples of building apps with it, such as Pixelorama. I like the idea that I can build something once and be able to export it for multiple platforms, including HTML5 for web embeds.</p>
+<p>Many people who play solo TTRPGs (tabletop role play games) have books, paper, and dice: basically everything as non-electronic as possible. Others use PDF sourcebooks and keep notes using some sort of app. I got the idea to make a dice-rolling application for that latter group.</p>
+<p>But wait! Some people might use an old repurposed laptop as a dedicated machine for such a thing, and games/apps made with Godot 4.x don't always run on those older devices. So, despite learning Godot staring with version 4.3, I decided to step backwards and build something with Godot 3.6.2! Not only was this a good learning exercise, it was also a lesson in appreciating all the improvements that have been made in recent releases. </p>
+<p>Enter RNGremlin!</p>
+<p><img alt="A screenshot of the RNGremlin UI with the Rust Gold theme" src="/images/screenshot01.png"></p>
+<p>RNGremlin has the following features:</p>
+<ul>
+<li>Generates up to five results simultaneously</li>
+<li>Select various die types (d4, d6, d8, d10, d12, d20 or d100) or leave a particular position off</li>
+<li>Select from various light and dark themes in a pixel art style because why not</li>
+<li>Auto save/load so that you can resume your session exactly as you left off</li>
+<li>UI sound effects, which can be toggled on/off</li>
+<li>Visual roll history, which can be cleared at any point</li>
+<li>Keyboard shortcuts if you don't / can't use a mouse</li>
+</ul>
+<p>So what did I accomplish by doing this? I learned how Godot has evolved between the two versions, including signal handling and node types. I reinforced the idea of outlining a project, keeping the scope small, and building to the requirements. (Although, admittedly, I expanded on the original plan by adding auto saving and loading the workspace with some inspiration from native elementary OS apps.) In the end, I made a cool thing that I can run on the Thinkpad T510 I acquired from my dad, and am able to share it with other people who may find value in it as well.</p>
+<p>The project file is available on <a href="https://codeberg.org/jaerrib/RNGremlin">Codeberg</a>. Binaries are available for Linux and Windows (64-bit only), and I plan on putting it up on itch.io very soon.</p>
 
   </article>
 </main>
