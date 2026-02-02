@@ -2,10 +2,11 @@ Title: Making Games
 Category: Blog
 Tags: games, coding
 Date: 2025-12-14
+Modified: 2026-02-02
 Author: John Beers
 Summary: Reconnecting with a childhood joy
 
-The first computer I ever got to use was a **Texas Intruments TI-99**. It was around 1984, which puts me somewhere close to 8 years old. My elementary school had that one computer for the entire building. I got to do some stuff with turtle graphics but not much else. Even though my exposure was limited, it planted a seed of what was possible.
+The first computer I ever got to use was a **Texas Instruments TI-99**. It was around 1984, which puts me somewhere close to 8 years old. My elementary school had that one computer for the entire building. I got to do some stuff with turtle graphics but not much else. Even though my exposure was limited, it planted a seed of what was possible.
 
 I'm a creative person. I hacked together games with balloons and string stretched across the room to play "volleyball" with my sisters. I made up my own board games, sometimes with no pieces and just kept everything was in my head. Art and music were always in the picture, too. A lot of that came together for the first time when I was 11.
 
@@ -13,7 +14,7 @@ Christmas 1987 was the year I received a glorious gift: the **Tandy Color Comput
 
 Between the included documentation and the source code I saw in issues of *3-2-1 Contact* magazine, I taught myself BASIC. I made things like a "diary" program, which saved text data to a cassette tape, and I made my first games. I don't profess to be Lord British. I wasn't making *Akalabeth*, but even the simplest text-based games brought me joy. There was just something about that loop of writing the code and then being able to move those colored stick figures across the screen with a joystick.
 
-I took all the coding classed that were offered in school, from BASIC in 8th grade to two years of Pascal in high school. For some reason, I had the asinine idea that doing something you enjoy for a job would take the fun out of it. I wasn't entirely wrong but rather than pursuing a computer science path, I opted to do...nothing and instead worked at jobs I didn't like for the majority of my life. That's a story for a different post though.
+I took all the coding classed that were offered at school, from BASIC in 8th grade to two years of Pascal in high school. For some reason, I had the asinine idea that doing something you enjoy for a job would take the fun out of it. I wasn't entirely wrong but rather than pursuing a computer science path, I opted to do...nothing and instead worked at jobs I didn't like for the majority of my life. That's a story for a different post though.
 
 Despite not doing anything technical for gainful employment, I still did some things on the side, mostly HTML/CSS and Python. In the past couple years, I started to hear about this game engine called **Godot**, especially with different game engines changing licenses and fees. I love Linux and open-source so this was right up my alley.
 
