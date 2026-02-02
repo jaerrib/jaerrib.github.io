@@ -21,7 +21,7 @@ including personal, freelance, and volunteer work:
 - A dice rolling application for solo TTRPG use featuring multiple pixel art themes and workspace that auto saves/loads 
 - **Role**: Developer
 - **Technologies Used:** Godot Engine 3.x, GDScript, Pixelorama
-- [Source Code](https://codeberg.org/jaerrib/RNGremlin)
+- [Source Code](https://codeberg.org/jaerrib/RNGremlin) | [Itch.io site](https://jaerrib.itch.io/rngremlin)
 
 ---
 
