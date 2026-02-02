@@ -19,7 +19,7 @@ AUTHOR_FEED_RSS = None
 LINKS = (
     ("Python.org", "https://www.python.org/"),
     ("Pelican", "https://getpelican.com/"),
-    ("Fedora Silverblue", "https://fedoraproject.org/silverblue/"),
+    ("Debian ", "https://www.debian.org/"),
 )
 
 # Social widget
