@@ -30,6 +30,6 @@ RNGremlin has the following features:
 
 So what did I accomplish by doing this? I learned how Godot has evolved between the two versions, including signal handling and node types. I reinforced the idea of outlining a project, keeping the scope small, and building to the requirements. (Although, admittedly, I expanded on the original plan by adding auto saving and loading the workspace with some inspiration from native elementary OS apps.) In the end, I made a cool thing that I can run on the Thinkpad T510 I acquired from my dad, and am able to share it with other people who may find value in it as well.
 
-The project file is available on [Codeberg](https://codeberg.org/jaerrib/RNGremlin). Binaries are available for Linux and Windows (64-bit only), and I plan on putting it up on itch.io very soon.
+The project file is available on [Codeberg](https://codeberg.org/jaerrib/RNGremlin). Binaries are available for Linux and Windows (64-bit only), and ~~I plan on putting it up on itch.io very soon~~ now [available on itch.io](https://jaerrib.itch.io/rngremlin).
 
 <iframe frameborder="0" src="https://itch.io/embed/4255184?bg_color=202020&amp;fg_color=f6cd26&amp;link_color=ac6b26&amp;border_color=5f4843" width="552" height="167"><a href="https://jaerrib.itch.io/rngremlin">RNGremlin by jaerrib</a></iframe>
