@@ -4,7 +4,7 @@ Tags: coding,
 Date: 2026-02-02
 Modified: 2026-02-03
 Author: John Beers
-Summary: 
+Summary: What I built between projects
 
 In the last year, I've made a variety of games with Godot. They've ranged from things I built by following a tutorial to full-fledged inventions of my own. My ambition, however, is still greater. I have grand ideas for things that I'm not even sure I can build (yet), and to be honest, sometimes it impacts my motivation. So, I got the idea to build something else. Something different, smaller in scope, and most importantly, fun.
 
