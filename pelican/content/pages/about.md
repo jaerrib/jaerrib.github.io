@@ -2,11 +2,11 @@ Title: About
 
 ### About Me
 
-I am a Full-Stack Web Developer (Python/Django) currently working as a Systems
-Support Specialist. I learned to program when I was 11 using BASIC on my Tandy
-Color Computer 2. I eventually started building websites for bands back in the
-late 90s when it was far less common for musicians to have a presence on the
-Internet.
+I am currently working as an ERP Coordinator, but I would love to become a
+full-time full-stack web developer (Python/Django) or game developer (Godot).
+I learned to program when I was 11 using BASIC on my Tandy Color Computer 2.
+I eventually started building websites for bands back in the late 90s when it
+was far less common for musicians to have a presence on the Internet.
 
 I love learning, problem-solving, music, and casual gaming. Prior to my career
 transition, I worked as a manager / supervisor in contract dining and injection
@@ -30,7 +30,7 @@ or [check out the platformer game I made with Godot](https://jaerrib.itch.io/wig
 - **Languages:** Python, JavaScript, HTML, CSS, SQL, GDScript, Markdown
 - **Frameworks/Libraries:** Django, Wagtail, Flask, Bootstrap, Simple.css, htmx,
   Jinja2
-- **Databases:** Postgres, MySQL, SQlite3
+- **Databases:** Postgres, MySQL, Sqlite3
 - **Development Tools:** Crystal Reports, Git, GitHub, Codeberg, AJAX, JSON,
   MySQL Workbench, Podman/Docker, Fly.io, Digital Ocean, AWS, Python Anywhere,
   Shopify, Wix, Squarespace, Webflow, WordPress
