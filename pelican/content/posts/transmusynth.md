@@ -63,7 +63,9 @@ I began to add more features over time which would give the user more control ov
 
 As my knowledge of Python grew, image2sound grew as well. Version 0.7 finally removed the characteristic "clickiness" by adding Blackman smoothing, and version 0.8 added the ability to specify a time signature. By the time 0.9 rolled around, a "quartet mode" was added to map CMYK images to the instruments associated with a string quartet (i.e., two violins, viola plus cello). Different waveforms were added, which allowed users to select sawtooth or square waves instead of being limited to the original sine waves, and envelope filters let them choose from several attack and decay presets.
 
-The biggest evolution of image2sound came when I opted to expand into MIDI exporting alongside a composition engine. The former allowed a wider range of sounds to be used via applications like MuseScore or LMMS while the latter allowed movements to be defined in terms of phrases and sections.
+The biggest evolution of image2sound came when I opted to expand into MIDI exporting alongside a composition engine. The former allowed a wider range of sounds to be used via applications like [MuseScore](https://musescore.org/) or [LMMS](https://lmms.io/), while the latter allowed movements to be defined in terms of phrases and sections.
+
+For example:
 
 ```python
 movement_type = {
