@@ -3,6 +3,13 @@ Title: Projects
 Here's a list of some of the software and design projects I've worked on,
 including personal, freelance, and volunteer work:
 
+--- TransmuSynth
+
+- A Python utility that combines my prompt2pixel and image2sound utilities, essentially allowing the user to convert text input to an image and the image to MIDI audio.
+- **Role:** Developer
+- **Technologies Used:** Python, Flask
+- [Source Code](https://codeberg.org/jaerrib/TransmuSynth) | [Live Site](https://transmusynth.fly.dev/)
+
 ---
 
 ### Space Snake Survivor *(Work in progress)*
