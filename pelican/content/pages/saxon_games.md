@@ -1,7 +1,7 @@
 Title: Saxon Games
 
 This site pulls together various resources for the quasi-historical Anglo-Saxon
-board games I've made.
+board games I've made. For an all-in-one guide to the rules of the games, check out the separate [Saxon Games](https://jaerrib.codeberg.page/saxon-games/) site. 
 
 ### Overview
 
