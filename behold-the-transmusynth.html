@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="generator" content="Pelican"/>
+    <title>johnbeers.xyz - Behold, the TransmuSynth!</title>
+    <link rel="stylesheet" type="text/css"
+          href="https://johnbeers.xyz/theme/css/pico.jade.min.css"/>
+
+
+
+
+    <meta name="tags" content="coding" />
+
+    <style>
+        article img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #hero {
+            align-items: center;
+            margin-bottom: 0;
+        }
+
+        @media only screen and (min-width: 481px) {
+
+            article header {
+                display: grid;
+            }
+
+            article aside {
+                justify-content: end
+            }
+
+            #hero {
+                display: flex;
+            }
+
+            #hero div {
+                display: flex;
+            }
+
+            #hero img {
+                width: 200px;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            #hero div {
+                display: block;
+                text-align: center;
+            }
+
+            #hero img {
+                width: 150px;
+                margin-top: 2em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<header class="container">
+    <nav>
+        <ul>
+            <li><a href="https://johnbeers.xyz">All Posts</a></li>
+        </ul>
+        <ul>
+
+            <li><strong><a
+                    href="https://johnbeers.xyz/category/blog.html">Blog</a></strong>            </li>
+
+&nbsp;&nbsp;|&nbsp;&nbsp;            <li><a
+                    href="https://johnbeers.xyz/pages/about.html">About</a>            </li>
+            <li><a
+                    href="https://johnbeers.xyz/pages/projects.html">Projects</a>            </li>
+            <li><a
+                    href="https://johnbeers.xyz/pages/saxon-games.html">Saxon Games</a>            </li>
+        </ul>
+    </nav>
+</header>
+<main style="padding-bottom: 0;padding-top: 0;" class="container">
+    <section id="hero">
+        <div style="grid-row: 1;width: 100%; margin-bottom: 0;">
+            <h1>johnbeers.xyz</h1>
+        </div>
+
+        <div style="grid-row: 1; align-items: center; justify-content: end;">
+            <img src="https://www.gravatar.com/avatar/dc88c852458e2bbb8cdd62be0cf9e26c50014cb3a593afcb04848d23801c10d6?s=200&d=https%3A%2F%2Fraw.githubusercontent.com%2Fiamjameswalters%2Fpiccolo%2Fmain%2Fpiccolo.png"
+                 style="border-radius: 50%;">
+        </div>
+    </section>
+<article>
+  <header>
+    <hgroup>
+    <h2>
+      <a href="https://johnbeers.xyz/behold-the-transmusynth.html" rel="bookmark"
+         title="Permalink to Behold, the TransmuSynth!">Behold, the TransmuSynth!</a></h2>
+         <h3>By
+          <a href="https://johnbeers.xyz/author/john-beers.html">John Beers</a>           on <time class="published" datetime="2026-04-13T00:00:00-04:00">Mon 13 April 2026</time>.</h3>
+    </hgroup>
+          <aside style="grid-column: 2; display: flex; align-items: end; margin-bottom: 30px;">
+           <div style="color: #73828c">Category: <a href="https://johnbeers.xyz/category/blog.html">Blog</a>          <br />Tags: 
+            <a href="https://johnbeers.xyz/tag/coding.html">coding</a>        </div>
+          </aside>
+ 
+  </header>
+
+  <h3>The beginning: image2sound</h3>
+<p>Back in January 2023, I made the first commits of a tool I called <strong><a href="https://codeberg.org/jaerrib/image2sound">image2sound</a></strong>. The premise was simple: I wanted to use the color values from a user-supplied image, convert them to various frequencies, and output a WAV file. To build that very basic CLI tool, I learned a little about argparse, numpy, and wavio.</p>
+<p>Here's that first iteration, in all its humble glory:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">wavio</span>
+<span class="kn">import</span> <span class="nn">argparse</span>
+
+
+<span class="k">def</span> <span class="nf">image_to_array</span><span class="p">(</span><span class="n">save_path</span><span class="p">):</span>
+    <span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">save_path</span><span class="p">)</span><span class="o">.</span><span class="n">convert</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="s2">&quot;RGB&quot;</span><span class="p">)</span>
+    <span class="n">img_arr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;int64&#39;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">img_arr</span>
+
+
+<span class="k">def</span> <span class="nf">rgb_to_frequency</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="n">freq</span> <span class="o">=</span> <span class="p">(</span><span class="n">r</span> <span class="o">*</span> <span class="n">g</span> <span class="o">*</span> <span class="n">b</span><span class="p">)</span> <span class="o">/</span> <span class="mf">829.06875</span>
+    <span class="k">return</span> <span class="n">freq</span>
+
+
+<span class="k">def</span> <span class="nf">array_to_sound</span><span class="p">(</span><span class="n">array</span><span class="p">):</span>
+    <span class="n">temp_array</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">array</span><span class="p">:</span>
+        <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">x</span><span class="p">:</span>
+            <span class="n">red</span> <span class="o">=</span> <span class="n">y</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="n">green</span> <span class="o">=</span> <span class="n">y</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+            <span class="n">blue</span> <span class="o">=</span> <span class="n">y</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+            <span class="n">freq</span> <span class="o">=</span> <span class="n">rgb_to_frequency</span><span class="p">(</span><span class="n">red</span><span class="p">,</span> <span class="n">green</span><span class="p">,</span> <span class="n">blue</span><span class="p">)</span>
+            <span class="n">tone</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">freq</span><span class="p">)</span>
+            <span class="n">temp_array</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">tone</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">temp_array</span>
+
+
+<span class="k">def</span> <span class="nf">save_wav</span><span class="p">(</span><span class="n">save_path</span><span class="p">,</span> <span class="n">array</span><span class="p">):</span>
+    <span class="n">rate</span> <span class="o">=</span> <span class="mi">22050</span>
+    <span class="n">split_test</span> <span class="o">=</span> <span class="n">save_path</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">)</span>
+    <span class="n">file_name</span> <span class="o">=</span> <span class="n">split_test</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="s2">&quot;.wav&quot;</span>
+    <span class="n">wavio</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="n">array</span><span class="p">,</span> <span class="n">rate</span><span class="p">,</span> <span class="n">sampwidth</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">clip</span><span class="o">=</span><span class="s2">&quot;ignore&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Saved file as &quot;</span><span class="p">,</span> <span class="n">file_name</span><span class="p">)</span>
+
+
+<span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">()</span>
+<span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;-p&quot;</span><span class="p">,</span> <span class="s2">&quot;--path&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">str</span><span class="p">)</span>
+<span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">()</span>
+<span class="n">path</span> <span class="o">=</span> <span class="n">args</span><span class="o">.</span><span class="n">path</span>
+<span class="n">image_array</span> <span class="o">=</span> <span class="n">image_to_array</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+<span class="n">sound_array</span> <span class="o">=</span> <span class="n">array_to_sound</span><span class="p">(</span><span class="n">image_array</span><span class="p">)</span>
+<span class="n">save_wav</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">sound_array</span><span class="p">)</span>
+</code></pre></div>
+
+<p>I began to add more features over time which would give the user more control over the output. By the time version 0.5 came out, you could specify a musical key, how long you wanted the tracks to be, and export stereo audio. There were some bugs, of course, such as the distinctive "click" each time a note was sounded. It was usable, though, and over the course of the year, I released several works under the name <strong><a href="https://placebobutton.bandcamp.com/">PLACEB0_BUTT0N</a></strong> to demonstrate what could be done with it. I was also ecstatic that the project had its first external contributor in gregroni (Gregor Niehl)!</p>
+<p>As my knowledge of Python grew, image2sound grew as well. Version 0.7 finally removed the characteristic "clickiness" by adding Blackman smoothing, and version 0.8 added the ability to specify a time signature. By the time 0.9 rolled around, a "quartet mode" was added to map CMYK images to the instruments associated with a string quartet (i.e., two violins, viola plus cello). Different waveforms were added, which allowed users to select sawtooth or square waves instead of being limited to the original sine waves, and envelope filters let them choose from several attack and decay presets.</p>
+<p>The biggest evolution of image2sound came when I opted to expand into MIDI exporting alongside a composition engine. The former allowed a wider range of sounds to be used via applications like MuseScore or LMMS while the latter allowed movements to be defined in terms of phrases and sections.</p>
+<div class="highlight"><pre><span></span><code><span class="n">movement_type</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;sonata&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s2">&quot;phrases&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span><span class="s2">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;A&quot;</span><span class="p">,</span> <span class="s2">&quot;length&quot;</span><span class="p">:</span> <span class="mi">16</span><span class="p">},</span>
+            <span class="p">{</span><span class="s2">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;B&quot;</span><span class="p">,</span> <span class="s2">&quot;length&quot;</span><span class="p">:</span> <span class="mi">12</span><span class="p">},</span>
+            <span class="p">{</span><span class="s2">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;C&quot;</span><span class="p">,</span> <span class="s2">&quot;length&quot;</span><span class="p">:</span> <span class="mi">6</span><span class="p">},</span>
+            <span class="p">{</span><span class="s2">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;D&quot;</span><span class="p">,</span> <span class="s2">&quot;length&quot;</span><span class="p">:</span> <span class="mi">12</span><span class="p">},</span>
+            <span class="p">{</span><span class="s2">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;E&quot;</span><span class="p">,</span> <span class="s2">&quot;length&quot;</span><span class="p">:</span> <span class="mi">8</span><span class="p">},</span>
+            <span class="p">{</span><span class="s2">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;F&quot;</span><span class="p">,</span> <span class="s2">&quot;length&quot;</span><span class="p">:</span> <span class="mi">6</span><span class="p">},</span>
+            <span class="p">{</span><span class="s2">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;G&quot;</span><span class="p">,</span> <span class="s2">&quot;length&quot;</span><span class="p">:</span> <span class="mi">12</span><span class="p">},</span>
+            <span class="p">{</span><span class="s2">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;H&quot;</span><span class="p">,</span> <span class="s2">&quot;length&quot;</span><span class="p">:</span> <span class="mi">12</span><span class="p">},</span>
+            <span class="p">{</span><span class="s2">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;I&quot;</span><span class="p">,</span> <span class="s2">&quot;length&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">},</span>
+            <span class="p">{</span><span class="s2">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;J&quot;</span><span class="p">,</span> <span class="s2">&quot;length&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">},</span>
+        <span class="p">],</span>
+        <span class="s2">&quot;sections&quot;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span><span class="s2">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;Exposition&quot;</span><span class="p">,</span> <span class="s2">&quot;sequence&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;A&quot;</span><span class="p">,</span> <span class="s2">&quot;B&quot;</span><span class="p">,</span> <span class="s2">&quot;C&quot;</span><span class="p">,</span> <span class="s2">&quot;D&quot;</span><span class="p">]},</span>
+            <span class="p">{</span><span class="s2">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;Development&quot;</span><span class="p">,</span> <span class="s2">&quot;sequence&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;E&quot;</span><span class="p">,</span> <span class="s2">&quot;F&quot;</span><span class="p">,</span> <span class="s2">&quot;C&quot;</span><span class="p">,</span> <span class="s2">&quot;F&quot;</span><span class="p">,</span> <span class="s2">&quot;E&quot;</span><span class="p">]},</span>
+            <span class="p">{</span><span class="s2">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;Recapitulation&quot;</span><span class="p">,</span> <span class="s2">&quot;sequence&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;G&quot;</span><span class="p">,</span> <span class="s2">&quot;H&quot;</span><span class="p">,</span> <span class="s2">&quot;C&quot;</span><span class="p">,</span> <span class="s2">&quot;D&quot;</span><span class="p">]},</span>
+            <span class="p">{</span><span class="s2">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;Coda&quot;</span><span class="p">,</span> <span class="s2">&quot;sequence&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;I&quot;</span><span class="p">,</span> <span class="s2">&quot;J&quot;</span><span class="p">]},</span>
+        <span class="p">],</span>
+    <span class="p">},</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<p>There's been more refinement, bug fixes, and other improvements. However, this is only half of the story.</p>
+<h3>Part 2: prompt2pixel</h3>
+<p>In April 2024, I began working on another tool. Although less ambitious, it was still based on things changing form, but this time, it was converting text prompts into images. I don't mean this in a generative AI sense; it's all done algorithmically. I got the idea from an Elixir tutorial I did that generated GitHub-style avatars from usernames via cryptographic hashes. That said, calling the tool <strong><a href="https://codeberg.org/jaerrib/prompt2pixel">prompt2pixel</a></strong> might be misleading to some people.</p>
+<p>Anyway, the basic premise is:</p>
+<ol>
+<li>the user provides text input</li>
+<li>that text is encoded as a cryptographic hash <em>(not for security, just deterministic mapping)</em></li>
+<li>the hex pairs from the hash are converted to RGB values</li>
+<li>those RGB values are used to generate the pixels of a small image</li>
+<li>the created image is enlarged to a desired size</li>
+<li>finally, the image is saved to a file</li>
+</ol>
+<p>Of course, I expanded it with more features to fit my needs. I added CMYK support, swapping user input with random sentences via <a href="https://pypi.org/project/wonderwords/">wonderwords</a>, remapping colors from .gpl palette files, and multiple hash types. I also used salts as the basis of video generation. If the user provides a FPS value and a desired video length, the tool calculates the total number of frames needed. While looping through the image generation, the index is used to salt the original text, which modifies the output. When the final video is viewed, these subtle changes create a sort of animation. Granted, it's abstract and more akin to 90s-style visualizers, but the effect is pretty cool.</p>
+<h3>Bringing it all together</h3>
+<p>The original idea for <strong>TransmuSynth</strong> was simply to combine both of these into a single CLI tool. Being able to supply text that would go through various changes to arrive at a piece of music appealed to my sense of creativity. In fact, I actually started to build it that way. However, having the user go through various text prompts to select parameters made for a less than stellar experience. So, I scrapped the entire thing and started building it as a Flask app.</p>
+<p>Why did I use Flask? Both tools were originally written Python, and I knew I wanted to have a GUI of some sort. I briefly entertained the idea of building a desktop app. However, I'm more familiar with web dev and wanted to build something quicker instead of fussing around with other toolkits. Being able to deploy it on a server would let people check out what I was working on without needing to download or install anything, which effectively made it cross-platform as a bonus. Django was going to be too much for a small project like this, so I ended up with Flask.</p>
+<p>Since I was already familiar with feeding the output of prompt2pixel into image2sound, the conversion to Flask was relatively easy. An initial complication came about from needing to work with user uploads for source images and color palettes without saving them to a database. Having worked through that, I also wanted to limit features that would make it less cost-effective to deploy the app on a free / pay-as-you-go provider like Fly.io (e.g., WAV and video files). For anyone wanting to run the app locally, there are config settings to turn some of those features back on while other, less used features were simply stripped out.</p>
+<h3>Conclusion</h3>
+<p>Building my own creative tools has been a rewarding experience. I've learned a lot about cryptography and audio / image processing with Python while extending my web development skills. I'm still adding user-controlled features that had been previously hard-coded, such as instrument selection, panning, etc. If you're interested in seeing the source code or trying a demo of the app, check out the following links:</p>
+<ul>
+<li><a href="https://codeberg.org/jaerrib/TransmuSynth">Source code on Codeberg</a></li>
+<li><a href="https://transmusynth.fly.dev/">Demo on Fly.io</a></li>
+</ul>
+<hr>
+<p><strong>Note:</strong> I plan on writing a follow-up post with more details about how I'm using TransmuSynth alongside other opensource tools in my own music projects. </p>
+
+  </article>
+</main>
+<footer style="display: grid; grid-template-columns: repeat(auto-fit, [col-start] minmax(100px, 1fr) [col-end]); padding-top: 0;"
+        class="container">
+    <aside style="grid-row: 1;">
+        <nav>
+            <ul>
+                <li><strong>Social:</strong></li>
+            </ul>
+            <ul>
+                <li><a href="https://mastodon.social/@johnbeers">Mastodon</a></li>
+                <li><a href="https://codeberg.org/jaerrib">Codeberg</a></li>
+                <li><a href="https://github.com/jaerrib/">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/john-beers9/">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <aside style="grid-row: 1;">
+        <nav>
+            <ul>
+                <li><strong>Links:</strong></li>
+            </ul>
+            <ul>
+                <li><a href="https://www.python.org/">Python.org</a></li>
+                <li><a href="https://getpelican.com/">Pelican</a></li>
+                <li><a href="https://www.debian.org/">Debian </a></li>
+            </ul>
+        </nav>
+    </aside>
+
+
+    <div style="grid-row: 2; grid-column: span 3;">
+        <hr/>
+        <p style="padding-top: 0.5em;">
+            Powered by <a href="https://getpelican.com/">Pelican</a>, built with the <a
+                href="https://github.com/iamjameswalters/piccolo">Piccolo</a>
+            theme, and modified to use the jade variant of <a
+                href="https://picocss.com/">Pico.css</a> version 2.1.1.</p>
+    </div>
+</footer>
+</body>
+
+</html>
