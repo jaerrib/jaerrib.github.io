@@ -2,9 +2,16 @@ Title: Language Learning with AI
 Category: Blog
 Tags: language, learning, AI
 Date: 2025-10-19
-Modified: 2025-10-20
+Modified: 2026-05-07
 Author: John Beers
 Summary: How I'm using an LLM to improve my written German
+
+> EDIT: It should be noted that this experiment only lasted about a month. I
+> found that it started to become a translation crutch rather than just a tool
+> for feedback. It was definitely useful in the beginning, but I felt I was
+> learning less as I focused on getting each entry to be "perfect". Once I
+> abandoned this approach and dove into more immersive learning methods, my
+> progress seemed to improve.
 
 First things first, let's get this out of the way now: I am *not* a huge fan of
 AI, LLMs, or whatever you want to refer to them as. I don't like the fact that
