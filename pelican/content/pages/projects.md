@@ -3,7 +3,7 @@ Title: Projects
 Here's a list of some of the software and design projects I've worked on,
 including personal, freelance, and volunteer work:
 
---- TransmuSynth
+### TransmuSynth
 
 - A Python utility that combines my prompt2pixel and image2sound utilities, essentially allowing the user to convert text input to an image and the image to MIDI audio.
 - **Role:** Developer
@@ -12,14 +12,14 @@ including personal, freelance, and volunteer work:
 
 ---
 
-### Space Snake Survivor *(Work in progress)*
+### Space Snake Survivor
 
 - A pixel
   art [Survivors-like](https://en.wikipedia.org/wiki/Vampire_Survivors%E2%80%93like)
   Snake game where every playthrough contains a random selection of sectors
 - **Role**: Developer
 - **Technologies Used:** Godot Engine 4.x, GDScript, Pixelorama
-- [Source Code](https://codeberg.org/jaerrib/space-snake-survivor)
+- [Source Code](https://codeberg.org/jaerrib/space-snake-survivor) | [Itch.io site](https://jaerrib.itch.io/space-snake-survivor)
 
 ---
 
@@ -91,7 +91,7 @@ including personal, freelance, and volunteer work:
 - **Role:** Full-stack developer
 - **Technologies Used:** Python, Django, PostgreSQL, HTML, CSS, Bootstrap,
   Fly.io
-- [Source Code](https://codeberg.org/jaerrib/driving-hours) | [Live Site](https://driving-hours.fly.dev/)
+- [Source Code](https://codeberg.org/jaerrib/driving-hours)
 
 ---
 
@@ -130,7 +130,7 @@ including personal, freelance, and volunteer work:
 - **Role:** Full-stack developer
 - **Technologies Used:** Python, Django, PostgreSQL, HTML, CSS, Bootstrap,
   Fly.io
-- [Source Code](https://codeberg.org/jaerrib/prod-pause) | [Live Site](https://prod-pause.fly.dev/)
+- [Source Code](https://codeberg.org/jaerrib/prod-pause)
 
 ---
 
