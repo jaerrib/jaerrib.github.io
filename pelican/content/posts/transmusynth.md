@@ -1,9 +1,9 @@
 Title: Behold, the TransmuSynth!
 Category: Blog
-Tags: coding,  
+Tags: coding,
 Date: 2026-04-13
 Author: John Beers
-Summary: Documenting the evolution of a creative "media alchemy" tool 
+Summary: Documenting the evolution of a creative "media alchemy" tool
 
 ### The beginning: image2sound
 
