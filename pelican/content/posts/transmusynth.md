@@ -126,7 +126,4 @@ Building my own creative tools has been a rewarding experience. I've learned a l
 
 ---
 
-**Note:** I plan on writing a follow-up post with more details about how I'm using TransmuSynth alongside other opensource tools in my own music projects. 
-
-
-
+**Note:** I plan on writing a follow-up post with more details about how I'm using TransmuSynth alongside other open source tools in my own music projects.
