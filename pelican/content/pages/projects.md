@@ -3,6 +3,15 @@ Title: Projects
 Here's a list of some of the software and design projects I've worked on,
 including personal, freelance, and volunteer work:
 
+### Attack Vector Alpha
+
+- A retro-style arcade game where players orbit around a central core to defend it from waves of enemies
+- **Role**: Developer
+- **Technologies Used:** Godot Engine 3.6, GDScript, Inkscape
+- [Source Code](https://codeberg.org/jaerrib/attack-vector-alpha) | [Play / Purchase on Itch.io](https://jaerrib.itch.io/attack-vector-alpha) | [Get it on Flathub](https://flathub.org/en/apps/page.codeberg.jaerrib.attack-vector-alpha)
+
+---
+
 ### TransmuSynth
 
 - A Python utility that combines my prompt2pixel and image2sound utilities, essentially allowing the user to convert text input to an image and the image to MIDI audio.
@@ -19,13 +28,13 @@ including personal, freelance, and volunteer work:
   Snake game where every playthrough contains a random selection of sectors
 - **Role**: Developer
 - **Technologies Used:** Godot Engine 4.x, GDScript, Pixelorama
-- [Source Code](https://codeberg.org/jaerrib/space-snake-survivor) | [Itch.io site](https://jaerrib.itch.io/space-snake-survivor)
+- [Source Code](https://codeberg.org/jaerrib/space-snake-survivor) | [Play / Purchase on Itch.io](https://jaerrib.itch.io/space-snake-survivor)
 
 ---
 
 ### RNGremlin
 
-- A dice rolling application for solo TTRPG use featuring multiple pixel art themes and workspace that auto saves/loads 
+- A dice rolling application for solo TTRPG use featuring multiple pixel art themes and workspace that auto saves/loads
 - **Role**: Developer
 - **Technologies Used:** Godot Engine 3.x, GDScript, Pixelorama
 - [Source Code](https://codeberg.org/jaerrib/RNGremlin) | [Itch.io site](https://jaerrib.itch.io/rngremlin)
