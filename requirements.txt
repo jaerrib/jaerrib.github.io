@@ -4,21 +4,21 @@
 #
 #    pip-compile
 #
-anyio==4.13.0
+anyio==4.14.2
     # via watchfiles
 blinker==1.9.0
     # via pelican
-docutils==0.22.4
+docutils==0.23
     # via pelican
 feedgenerator==2.2.1
     # via pelican
-idna==3.13
+idna==3.18
     # via anyio
 jinja2==3.1.6
     # via pelican
-markdown==3.10.2
+markdown==3.10.3
     # via -r requirements.in
-markdown-it-py==4.1.0
+markdown-it-py==4.2.0
     # via rich
 markupsafe==3.0.3
     # via jinja2
@@ -26,9 +26,9 @@ mdurl==0.1.2
     # via markdown-it-py
 ordered-set==4.1.0
     # via pelican
-pelican==4.11.0.post0
+pelican==4.12.0
     # via -r requirements.in
-pygments==2.18.0
+pygments==2.19.2
     # via
     #   pelican
     #   rich
@@ -40,5 +40,5 @@ six==1.17.0
     # via python-dateutil
 unidecode==1.4.0
     # via pelican
-watchfiles==1.1.1
+watchfiles==1.2.0
     # via pelican
