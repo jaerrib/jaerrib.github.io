@@ -7,7 +7,7 @@ including personal, freelance, and volunteer work:
 
 - A retro-style arcade game where players orbit around a central core to defend it from waves of enemies
 - **Role**: Developer
-- **Technologies Used:** Godot Engine 3.6, GDScript, Inkscape
+- **Technologies Used:** Godot Engine 3.6, GDScript, LMMS, Inkscape
 - [Source Code](https://codeberg.org/jaerrib/attack-vector-alpha) | [Play / Purchase on Itch.io](https://jaerrib.itch.io/attack-vector-alpha) | [Get it on Flathub](https://flathub.org/en/apps/page.codeberg.jaerrib.attack-vector-alpha)
 
 ---
