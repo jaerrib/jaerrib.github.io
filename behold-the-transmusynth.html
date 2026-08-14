@@ -113,24 +113,24 @@
   <h3>The beginning: image2sound</h3>
 <p>Back in January 2023, I made the first commits of a tool I called <strong><a href="https://codeberg.org/jaerrib/image2sound">image2sound</a></strong>. The premise was simple: I wanted to use the color values from a user-supplied image, convert them to various frequencies, and output a WAV file. To build that very basic CLI tool, I learned a little about argparse, numpy, and wavio.</p>
 <p>Here's that first iteration, in all its humble glory:</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">wavio</span>
-<span class="kn">import</span> <span class="nn">argparse</span>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">PIL</span><span class="w"> </span><span class="kn">import</span> <span class="n">Image</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">wavio</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">argparse</span>
 
 
-<span class="k">def</span> <span class="nf">image_to_array</span><span class="p">(</span><span class="n">save_path</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">image_to_array</span><span class="p">(</span><span class="n">save_path</span><span class="p">):</span>
     <span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">save_path</span><span class="p">)</span><span class="o">.</span><span class="n">convert</span><span class="p">(</span><span class="n">mode</span><span class="o">=</span><span class="s2">&quot;RGB&quot;</span><span class="p">)</span>
     <span class="n">img_arr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">img</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;int64&#39;</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">img_arr</span>
 
 
-<span class="k">def</span> <span class="nf">rgb_to_frequency</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">rgb_to_frequency</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
     <span class="n">freq</span> <span class="o">=</span> <span class="p">(</span><span class="n">r</span> <span class="o">*</span> <span class="n">g</span> <span class="o">*</span> <span class="n">b</span><span class="p">)</span> <span class="o">/</span> <span class="mf">829.06875</span>
     <span class="k">return</span> <span class="n">freq</span>
 
 
-<span class="k">def</span> <span class="nf">array_to_sound</span><span class="p">(</span><span class="n">array</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">array_to_sound</span><span class="p">(</span><span class="n">array</span><span class="p">):</span>
     <span class="n">temp_array</span> <span class="o">=</span> <span class="p">[]</span>
     <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">array</span><span class="p">:</span>
         <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="n">x</span><span class="p">:</span>
@@ -143,7 +143,7 @@
     <span class="k">return</span> <span class="n">temp_array</span>
 
 
-<span class="k">def</span> <span class="nf">save_wav</span><span class="p">(</span><span class="n">save_path</span><span class="p">,</span> <span class="n">array</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">save_wav</span><span class="p">(</span><span class="n">save_path</span><span class="p">,</span> <span class="n">array</span><span class="p">):</span>
     <span class="n">rate</span> <span class="o">=</span> <span class="mi">22050</span>
     <span class="n">split_test</span> <span class="o">=</span> <span class="n">save_path</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">)</span>
     <span class="n">file_name</span> <span class="o">=</span> <span class="n">split_test</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="s2">&quot;.wav&quot;</span>
