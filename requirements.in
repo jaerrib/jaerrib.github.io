@@ -1,2 +1,2 @@
 markdown>=3.10,<3.11
-pelican>=4.11,<4.12
+pelican>=4.11,<4.13
