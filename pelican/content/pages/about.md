@@ -21,7 +21,7 @@ Although I don't always have the time to play, I enjoy a variety of video
 games, from open-world adventure to 4x strategy. I also like board games and
 have invented a few
 myself. [Read more about those]({filename}saxon_games.md)
-or [check out the platformer game I made with Godot](https://jaerrib.itch.io/wightwatch-keep)!</p>
+or [check out the games I made with Godot](https://jaerrib.itch.io/)!</p>
 
 ---
 
