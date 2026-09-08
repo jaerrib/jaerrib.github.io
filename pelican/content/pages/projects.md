@@ -46,7 +46,7 @@ including personal, freelance, and volunteer work:
 - 2D platformer game for Linux, Windows, and web
 - **Role:** Developer
 - **Technologies Used:** Godot Engine 4.x, GDScript, Pixelorama
-- [Source Code](https://codeberg.org/jaerrib/wightwatch_keep/) | [Play / Purchase on Itch.io](https://jaerrib.itch.io/wightwatch-keep)
+  - [Source Code](https://codeberg.org/jaerrib/wightwatch_keep/) | [Play / Purchase on Itch.io](https://jaerrib.itch.io/wightwatch-keep) | [Get it on Flathub](https://flathub.org/en/apps/page.codeberg.jaerrib.wightwatch_keep)
 
 ---
 
