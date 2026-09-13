@@ -5,7 +5,8 @@ including personal, freelance, and volunteer work:
 
 ### Attack Vector Alpha
 
-- A retro-style arcade game where players orbit around a central core to defend it from waves of enemies
+- A retro-style arcade game where players orbit around a central core to defend
+  it from waves of enemies
 - **Role**: Developer
 - **Technologies Used:** Godot Engine 3.6, GDScript, LMMS, Inkscape
 - [Source Code](https://codeberg.org/jaerrib/attack-vector-alpha) | [Play / Purchase on Itch.io](https://jaerrib.itch.io/attack-vector-alpha) | [Get it on FlatHub](https://flathub.org/en/apps/page.codeberg.jaerrib.attack-vector-alpha)
@@ -14,17 +15,18 @@ including personal, freelance, and volunteer work:
 
 ### TransmuSynth
 
-- A Python utility that combines my prompt2pixel and image2sound utilities, essentially allowing the user to convert text input to an image and the image to MIDI audio.
+- A Python-based web app that combines my prompt2pixel and image2sound
+  utilities, essentially allowing the user to convert text input to an
+  image and the image to MIDI audio.
 - **Role:** Developer
-- **Technologies Used:** Python, Flask
+- **Technologies Used:** Python, Flask, hashlib, numpy, Pillow
 - [Source Code](https://codeberg.org/jaerrib/TransmuSynth) | [Live Site](https://transmusynth.fly.dev/)
 
 ---
 
 ### Space Snake Survivor
 
-- A pixel
-  art [Survivors-like](https://en.wikipedia.org/wiki/Vampire_Survivors%E2%80%93like)
+- A pixel art [Survivors-like](https://en.wikipedia.org/wiki/Vampire_Survivors%E2%80%93like)
   Snake game where every playthrough contains a random selection of sectors
 - **Role**: Developer
 - **Technologies Used:** Godot Engine 4.x, GDScript, Pixelorama
@@ -34,9 +36,10 @@ including personal, freelance, and volunteer work:
 
 ### RNGremlin
 
-- A dice rolling application for solo TTRPG use featuring multiple pixel art themes and workspace that auto saves/loads
+- A dice rolling application for solo TTRPG use featuring multiple pixel art
+  themes and workspace that auto saves/loads
 - **Role**: Developer
-- **Technologies Used:** Godot Engine 3.x, GDScript, Pixelorama
+- **Technologies Used:** Godot Engine 3.6 (original), Godot Engine 4.x (starting with the 2.0.0 release), GDScript, Pixelorama
 - [Source Code](https://codeberg.org/jaerrib/RNGremlin) | [Itch.io site](https://jaerrib.itch.io/rngremlin) | [Get it on FlatHub](https://flathub.org/en/apps/page.codeberg.jaerrib.RNGremlin)
 
 ---
@@ -75,7 +78,9 @@ including personal, freelance, and volunteer work:
 
 ### Mǽrstánas
 
-- Multiplayer platform for playing the board game, Mǽrstánas
+- Multiplayer platform for playing the abstract strategy board game,
+  [Mǽrstánas](https://jaerrib.codeberg.page/saxon-games/maerstanas/overview/),
+  aginst bots or asynchronously with other players
 - **Role:** Full-stack developer
 - **Technologies Used:** Python, Django, PostgreSQL, HTML, CSS, Bootstrap,
   Fly.io
