@@ -8,7 +8,7 @@ including personal, freelance, and volunteer work:
 - A retro-style arcade game where players orbit around a central core to defend it from waves of enemies
 - **Role**: Developer
 - **Technologies Used:** Godot Engine 3.6, GDScript, LMMS, Inkscape
-- [Source Code](https://codeberg.org/jaerrib/attack-vector-alpha) | [Play / Purchase on Itch.io](https://jaerrib.itch.io/attack-vector-alpha) | [Get it on Flathub](https://flathub.org/en/apps/page.codeberg.jaerrib.attack-vector-alpha)
+- [Source Code](https://codeberg.org/jaerrib/attack-vector-alpha) | [Play / Purchase on Itch.io](https://jaerrib.itch.io/attack-vector-alpha) | [Get it on FlatHub](https://flathub.org/en/apps/page.codeberg.jaerrib.attack-vector-alpha)
 
 ---
 
@@ -37,7 +37,7 @@ including personal, freelance, and volunteer work:
 - A dice rolling application for solo TTRPG use featuring multiple pixel art themes and workspace that auto saves/loads
 - **Role**: Developer
 - **Technologies Used:** Godot Engine 3.x, GDScript, Pixelorama
-- [Source Code](https://codeberg.org/jaerrib/RNGremlin) | [Itch.io site](https://jaerrib.itch.io/rngremlin)
+- [Source Code](https://codeberg.org/jaerrib/RNGremlin) | [Itch.io site](https://jaerrib.itch.io/rngremlin) | [Get it on FlatHub](https://flathub.org/en/apps/page.codeberg.jaerrib.RNGremlin)
 
 ---
 
@@ -46,7 +46,7 @@ including personal, freelance, and volunteer work:
 - 2D platformer game for Linux, Windows, and web
 - **Role:** Developer
 - **Technologies Used:** Godot Engine 4.x, GDScript, Pixelorama
-  - [Source Code](https://codeberg.org/jaerrib/wightwatch_keep/) | [Play / Purchase on Itch.io](https://jaerrib.itch.io/wightwatch-keep) | [Get it on Flathub](https://flathub.org/en/apps/page.codeberg.jaerrib.wightwatch_keep)
+  - [Source Code](https://codeberg.org/jaerrib/wightwatch_keep/) | [Play / Purchase on Itch.io](https://jaerrib.itch.io/wightwatch-keep) | [Get it on FlatHub](https://flathub.org/en/apps/page.codeberg.jaerrib.wightwatch_keep)
 
 ---
 
